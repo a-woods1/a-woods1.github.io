@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Ten</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">How Do You Say Goodbye? 
+           <div class="blog_week">WEEK 10</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+      <p>It’s hard to believe but we are in the last week of work with our client. This project has taught us so many lessons, it’s hard to capture all of them. But we think the best way to say goodbye to a project is to reflect on everything you’ve learned, so we’re going to try anyway! Here is our top ten list of things we’ve learned from this project:</p>
+
+      <ol>
+        <li><b>Great partners make a huge difference:</b> We had really constructive, supportive clients and advisors. If you are fortunate enough to have partners who want you to succeed then make use of them! Ask for their feedback regularly.</li><br/>
+        <li><b>Scope early and often:</b> Our project started out with a huge scope - hiring, onboarding and wayfinding for all people with disabilities. While we learned a ton across a variety of areas, we were able to move faster and create more valuable when focusing on something very specific. </li><br/>
+        <li><b>Create sources of truth:</b> When you have a diverse team of five people, people might hear the same thing and interpret it very differently. Creating sources of truth artifacts like personas, journey maps, etc is critical to avoid any misunderstandings later on in the design process.</li><br/>
+        <li><b>Choose team tools over processes:</b> In our experience, trying to handle team challenges by coming up with new, intensive, comprehensive processes is not as effective as creating small tools that can be used in critical moments. Addressing team issues as design problems is also extremely useful. </li><br/>
+        <li> <b>Seemingly small things make a huge difference:</b> When we began this project, we thought that we would create something revolutionary, that the world had never seen before! But in reality, one of our biggest discoveries is that something seemingly “small” and “simple” can make a huge change in the lives of people, with or without disabilities.</li><br/>
+        <li><b>Accessibility is not an afterthought:</b> None of us had accessibility experience before starting this project. One of the most important things we will take away is the concept of inclusive design. Regardless of if a project is focused on people with disabilities, designing with accessibility in mind from the beginning will create a better experience for everyone.</li><br/>
+        <li><b>Disagree and commit:</b> There will always be differences of opinion when it comes to a decision -- you can never make everyone happy. Our project involved so much decision making amongst the team. The moment we hit our stride was when we learned to put this principle into place.</li><br/>
+        <li><b>Figure out how to leverage each other’s strengths:</b> A well performing team should ideally be greater than the sum of its individual parts. We were able to achieve this by being explicit about strengths, learning goals and carving out the right time and space for people to do their best work.</li><br/>
+        <li><b>Treat everything as a learning opportunity:</b> At the end of the day, this project is an academic exercise. It exists for the purpose of learning. The weeks where we tried a new research method, or design brainstorming technique, or took a risk in our process or product will be the weeks that have taught us the most.</li><br/>
+        <li><b>Projects like this stick with you.</b> Every single one of our team members views digital and physical experiences differently now. When we watch a video, we notice if there are no captions available. When we go to a restaurant we notice if there are steps at the entrance. A project like this can change how you experience the world. In reality, we won’t have to say goodbye to this project. The lessons we’ve learned will stick with us for a lifetime. </li> <br/>         
+
+          </ol><br/>
+
+
+
+      <br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Go<br/>Back</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 1</div>
+      <h2>Welcome to New York!</h2>
+      <p>If you're going to run a marathon, make sure you take the last few weeks off. It may sound counterintuitive, but the concept of “tapering” is a critical part of marathon training. </p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="{{ url_for('blog_week_1') }}">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    {% include "footer.html" %}
+  </body>
+</html>

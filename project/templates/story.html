@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Bloomberg</title>
+
+    <!-- JS -->
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" /></script>
+
+    <script src="{{ url_for('static', filename='js/story.js') }}"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+ <div id="page_title">
+    <div class="row">
+      <div id="heading" class="col-lg-7 col-sm-11">
+    How do you ask a company for something, while trying to convince them to hire you?
+  </div>
+  <div class="col-6">
+</div>
+</div>
+  </div>
+
+<!-- section1 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h4> THE PROBLEM </h4>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12" id="problem-text">
+                        This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
+                         <br/><br/>
+
+
+						These "favors" aren't really favors though. They are  accommodations. <span> Accommodations can be anything a person with a disability might need to complete a task. </span> An American Sign Language interpreter might be an accommodation for a Deaf person during an in person meeting. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. <br/><br/>
+
+						<span>The Americans with Disabilities Act requires companies to provide "reasonable" accommodations to candidates during the hiring process.</span> However, asking for an accommodation can be easier said than done, especially because candidates with disabilities feel it could open them up to bias during the hiring process. <br/> <br/>
+
+						This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
+
+						                        </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+<!-- pop out boxes -->
+
+	<div class='ui'>
+ 		<div class="row" id="pop-out-section">
+
+
+				<div class="col-lg-4 col-sm-12">
+
+				  <div class='ui_box'>
+				    <div class='ui_box__inner'>
+				      <div class='stat'>
+				        <span>19%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar'></div>
+				      </div>
+				      <p class="stat">Current percentage of the U.S. Population with a disability.</p>
+
+				  <div class='stat'>
+				        <span>25%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar_b'></div>
+				      </div>
+				      <p class="stat">Percentage of the U.S. Population projected to have a disability by 2020.</p>
+				  </div>
+
+				</div>
+				</div>
+
+				  <div class="col-lg-4 col-sm-12">
+
+				  <div class='ui_box'>
+				    <div class='ui_box__inner'>
+				      <div class='stat'>
+				        <span>20.9%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar_2'></div>
+				      </div>
+				      <p class="stat">The percentage of people with disabilities who participate in the U.S. Labor Force.</p>
+ 				
+ 				<div class='stat'>
+				        <span>68.3%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar_2_b'></div>
+				      </div>
+				      <p class="stat">The percentage of people without disabilities who participate in the U.S. Labor Force</p>
+				  </div>
+
+
+				</div>
+				</div>
+
+				
+
+				<div class="col-lg-4 col-sm-12">
+
+				  <div class='ui_box'>
+				    <div class='ui_box__inner'>
+				      <div class='stat'>
+				        <span>8.0%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar_3'></div>
+				      </div>
+				      <p class="stat">The unemployment rate for people with disabilities.</p>
+
+				       <div class='stat'>
+				        <span>3.5%</span>
+				      </div>
+				      <div class='progress'>
+				        <div class='progress_bar_3_b'></div>
+				      </div>
+				      <p class="stat">The unemployment rate for people without disabilities.</p>
+				  </div>
+
+				</div>
+				</div>
+
+				</div>
+	</div>
+
+
+
+<!-- section2 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h4> THE CLIENT </h4>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                        Enter Bloomberg, a global, financial media and technology company, dedicated to creating the most inclusive work environment possible. In the Spring and Summer of 2018, they approached our team, to understand how they could make hiring and onboarding as inclusive as possible for people with disabilities.
+                    </div>
+
+                     <div class="col-lg-1 col-sm-12">
+                        </div>
+
+                        <div class="col-lg-1 col-sm-12" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/employeesicon.png') }}" alt="Placeholder image"/>
+
+                        	19K Employees
+                        </div>
+
+                        <div class="col-lg-1 col-sm-12">
+                        </div>
+
+                         <div class="col-lg-1 col-sm-12" id="icon-text">
+							
+							<img id="bb-icons" src="{{ url_for('static', filename='assets/images/officeicon.png') }}" alt="Placeholder image"/>
+
+                        	192 Offices
+                        </div>
+
+ 						<div class="col-lg-1 col-sm-12">
+                        </div>
+
+                         <div class="col-lg-1 col-sm-12" id="icon-text">
+
+						<img id="bb-icons" src="{{ url_for('static', filename='assets/images/computericon.png') }}" alt="Placeholder image"/>
+
+                        	325K Subscribers
+                        </div>
+
+                         <div class="col-lg-1 col-sm-12">
+                        </div>
+
+                         <div class="col-lg-1 col-sm-12" id="icon-text">
+
+                         <img id="bb-icons" src="{{ url_for('static', filename='assets/images/revenueicon.png') }}" alt="Placeholder image"/>
+
+                        	$9Bn Revenue
+                        </div> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+<!-- quote -->
+
+<div id="sub-section">
+		     <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        	We started with the assumption that the hardest part for people with disabilities, was getting what they needed to excel. 
+                        </div>
+                    </div>
+
+           <div class='ui'>
+ 				<div class="row" id="pop-out-section">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_3'>
+					    <div class='ui_box__inner2'>
+					        <span>Disclose Your Disability</span>
+						</div>
+						</div>
+					</div>
+
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Secure the right Accomodation</span>
+						</div>
+						</div>
+					</div>
+
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_3'>
+					    <div class='ui_box__inner2'>
+					        <span>Perform in the Role</span>
+						</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+			   <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        	However, based on our research, it we uncovered that the most difficult part of the current experience for people with disabilities was actually asking and disclosing their disability in the first place. 
+                        </div>
+                    </div>
+
+           <div class='ui'>
+ 				<div class="row" id="pop-out-section">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Disclose Your Disability</span>
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_3'>
+					    <div class='ui_box__inner2'>
+					        <span> Secure the right Accomodation</span>
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_3'>
+					    <div class='ui_box__inner2'>
+					        <span> Perform in the Role</span>
+						</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+		</div>
+
+
+
+<!-- quote -->
+
+<div id="subhead">
+		     <div class="row">
+   
+			<div class ="col-lg-12 col-sm12">
+		<div class="block animatable fadeInDown animationDelay" id="heading2">"If your disability is obvious then no one wants to bring it up. It is a huge elephant in the room. The employer can't ask, but they are wondering if the person can do the job. Meanwhile, the person [with a disability] is scared to bring it up."</div>
+		</div>
+	</div>
+   	</div>
+
+
+
+<!-- see-saw -->
+<div class="row" id ="sub-section">
+         <div class="col-lg-5 col-md-12">
+			  <div class="see-saw-background">
+			    <div class="ball" id="ball1"> </div>
+			    <div class="ball" id="ball2"> </div>
+			      <div id="pivot"></div>
+			      <div id="board"></div>
+			  </div>
+			</div>
+
+         <div class="col-lg-7 col-sm-12">
+         	<div class = "row"> People with disabilities have to make a difficult, personal decision on whether or not to ask for an accommodation. Based on our research, here are some of the major factors they must weigh in this decision. Click on the following factors to find out more: </div>
+			  
+         	<div class = "row" id="balls"> 
+
+			         	<div class="ball-solid" id="0" tabindex="0"> Visibility</div>
+						<div class="ball-solid" id="1" tabindex="0"> Necessity
+						</div>
+						<div class="ball-solid" id="2" tabindex="0"> Trust
+						</div>
+						<div class="ball-solid" id="3" tabindex="0"> Personality
+						</div>
+						<div class="ball-solid" id="4" tabindex="0"> Age
+						</div>
+					</div>
+
+					 <div class="row" >
+        <div class="col-lg-12 col-sm-12">
+		    <div class="empty-text"></div>
+		</div>
+
+			</div>
+
+         	</div>
+         </div>
+
+		</div>
+
+
+<!-- section4 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-12">
+								<h4> OUR GOAL </h4>
+                        Our team set out to create something that would help people with disabilities feel more comfortable actually asking for what they need. We brainstormed a ton of concepts, and tested them with people with disabilites to understand what to pursue. 
+                        </div>
+
+
+                        	<div class="col-md-3 col-sm-12">
+
+								  <div class=form-note>
+								    <div class=textAria>
+								      <b>A mentoring platform</b><br/>
+								      <b>A virtual assistant</b><br/>
+								      <b>A transferrable profile</b><br/>
+								      <b>A disclosure calculator</b><br/>
+									<b>An anonymous forum</b><br/>
+									<b>A cooperative game</b><br/>
+								    </div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-12">
+
+								  <div class=form-note>
+								    <div class=textAria>
+								      <b>A VR storytelling experience</b><br/>
+								      <b>A dashboard of disclosure information</b><br/>
+								      <b>A company accessibility review site</b><br/>
+								    </div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-12">
+
+								  <div class=form-note>
+								    <div contenteditable class=textAria>
+								      <br/><b>Add Your Own Ideas here!</b><br/>
+								    </div>
+								</div>
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- new section -->
+<div id="sub-section">
+	<div class="row">
+ 			<div class="col-lg-12 col-sm-12">
+                After testing out these initial designs, we realized that the best place we could provide more help was when it came to understanding the neccessity factor in their disclosure decision. People with disabilities were not always able to evaluate what they will be asked to do during the hiring process. <span> Unfamiliarity with what is needed can lead to two poor outcomes for people with disabilities</span>: <br/> <br/>
+            </div>
+        </div>
+        <div class="row">
+        		<div class="col-md-12 col-sm-12">
+                <ol>
+
+               	<li>A person discloses, when they do not actually need to</li>
+               	<li> A person does not disclose, when they actually do need an accommodation to perform </li>
+               </ol>
+           	</div>
+           </div>
+
+               Our team, decided to focus on creating a resource that could successfully provide information in a model that one of our research participants shared, for making the disclosure descision:
+
+			<div class='ui'>
+ 				<div class="row">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Understand </span><br/>
+					        What is expected of me?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Evaluate</span><br/>
+					        For what might I need an accommodation?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Request</span><br/>
+					        How can I easily ask for an accommodation?
+						</div>
+						</div>
+					</div>
+			       </div>
+			     </div>
+ 			</div>
+
+
+
+
+  <div id="subhead">
+		<div class="row">
+ 			<div class="col-lg-12 col-sm-12">
+                <a class="team_links" href="{{ url_for('home') }}"">We're thrilled to introduce Magic8Ball.</a> <br/>
+
+                The tool that will allow people with and without disabilities to ensure they have exactly what they need during the hiring process! And that benefits both candidates with disabilities and Bloomberg. <br/><br/>
+            </div>
+        	</div>
+        <div class="row">
+        		<div class="col-md-6 col-sm-12">
+        		<h2> For people with disabilities </h2>
+
+                <ol>
+               	<li>I know what to expect in the hiring process</li>
+               	<li> I can make smart decisions about what I need ahead of time </li>
+               	<li> I can confidently and easily request what I need </li>
+               </ol>
+           	</div>
+
+           	<div class="col-md-6 col-sm-12">
+        		<h2> For Bloomberg </h2>
+
+                <ol>
+               	<li>I receive accommodation requests in advance</li>
+               	<li> I have help in learning about accommodations</li>
+               	<li> I have help in implementing any accommodations </li>
+               </ol>
+           	</div>
+
+
+           </div>
+		
+
+
+
+
+	<div id="sub-section">
+	  	<div class="row">
+
+            	<div class ="col-md-5 col-sm12">
+				<div class="block animatable fadeInDown" id="heading2p5">"This would be such a cool tool to have in a job interview. I am always so hesitant to ask for things but this makes me feel way more confident. It would be so nice to have a company say, we get it, there are things that you need and we are okay with providing them." - PWD</div>
+				</div>
+
+					<div class ="col-md-1 col-sm12"></div>
+
+				<div class ="col-md-5 col-sm12">
+				<div class="block animatable fadeInDown" id="heading2p5">"I love that this tool helps me provide the best possible candidate experience. Before, I had no idea what to do with these requests, but this makes it seem so much easier, and I love knowing in advance." - Bloomberg Recruiting Coordinator</div>
+				</div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="container">
+
+
+
+    <!-- Portfolio -->
+    <div id="main_page">
+
+
+
+
+
+    </div><!-- End main page -->
+    </div><!-- end container -->
+    {% include "footer.html" %}
+  </body>
+</html>

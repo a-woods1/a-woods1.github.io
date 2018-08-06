@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Introducing B READY</title>
+
+  <!--JS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" /></script>
+
+    <script src="{{ url_for('static', filename='js/story.js') }}"></script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+    <!-- Header -->
+
+ <div id="page_title">
+    <div class="row">
+      <div id="heading" class="col-lg-7 col-sm-11">
+        B READY: A system to reduce uncertainty for candidates with disabilities and recruiting coordinators.
+  </div>
+  <div class="col-6">
+</div>
+</div>
+  </div>
+
+<!-- section1 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> THE PRODUCT </h1>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12" id="problem-text">
+
+            B READY is a web app with an interface for candidates, and Recruiting Coordinators.  <br/><br/>
+
+            The candidate side contains key information about the tasks, tool and environment involved with the current interview stage of the applicant. Candidates are also able to navigate 360 street-view style photospheres to get a sense of the environment if relevant. Finally, the candidate view includes a menu of accessibility accommodation options which candidates can open and select. <br/> <br/>
+
+            The Recruiting side contains step by step directions and controls for implementing accessibility accommodations. There is also space in the Recruiting side of the tool for communicating to candidates, Employee Relations, and hiring teams. <br/><br/>
+
+            The following story demonstrates how the two sides work together to help both sides understand, evaluate and act.
+
+                                    </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+              <section class="timeline">
+                <ul>
+                  <li id ="candidate-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="round-demo-pic" src="{{ url_for('static', filename='assets/images/jim-photo.jpg') }}" alt="Placeholder image"/>
+
+                      <time>Meet Jim, a software engineering grad who is looking for his first job. He is thrilled to have an onsite interview at Bloomberg, but isn apprehensive about the situation due to his mobility impairment.</time>
+
+                    </div>
+                  </li>
+
+                  <li id ="candidate-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                       <img id="demo-pic" src="{{ url_for('static', filename='assets/images/UI.gif') }}" alt="Placeholder image"/>
+                       Understand
+                      <time> Jim logs into B READY where he reads about the tasks, tools and environment that will be part of his interview day. He notices that part of the day involves receiving a security badge and checking in at the front desk.
+                     </time> 
+                    </div>
+                  </li>
+                  <li id ="candidate-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+                      
+                       <img id="demo-pic" src="{{ url_for('static', filename='assets/images/UI.gif') }}" alt="Placeholder image"/>
+                      Evaluate
+                      <time> Jim opens the 360 Photo sphere to see what the check in area looks like. He notices that one of the check in desks involves going up and down a set of stairs, and makes a note to enter through the other entrance.
+                     </time>  
+
+                    </div>
+                  </li>
+                  <li id ="candidate-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+                      
+                      <img id="demo-pic" src="{{ url_for('static', filename='assets/images/UI.gif') }}" alt="Placeholder image"/>
+                      Act
+                      <time> Jim also notices a call out that the elevator is not designed to stop on every floor, so he decides to select the relevant accommodation presented to him in the interface -- elevator-all-floor access.
+                     </time> 
+
+                    </div>
+                  </li>
+
+                  <li id ="candidate-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="round-demo-pic" src="{{ url_for('static', filename='assets/images/jim-photo.jpg') }}" alt="Placeholder image"/>
+
+                      <time>Jim has a clear understanding of what he will be asked to do, and checking his submitted request, he also feels confident that he will have everything he needs on the interview day. Now Jim can focus on the core of the interview day - preparing for coding and behavioral questions.</time> 
+
+                    </div>
+                  </li>
+
+
+                   <li id ="recruiter-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="round-demo-pic" src="{{ url_for('static', filename='assets/images/rosa-image.jpg') }}" alt="Placeholder image"/>
+
+                      <time>Now let's meet Rosa. Rosa is the recruiting coordinator responsible for ensuring Jim has everything he needs during the onsite interview. She takes pride in creating a great experience for every candidate.</time> 
+
+                    </div>
+                  </li>
+                  
+
+                  <li id ="recruiter-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="demo-pic" src="{{ url_for('static', filename='assets/images/rosa-one.png') }}" alt="Placeholder image"/>
+                      Understand
+                      <time>Rosa receives Jim's request for All Floor Elevator Access in her B READY interface and is quickly able to determine what the request is and see more information about if she chooses to.</time> 
+                    </div>
+                  </li>
+
+                  <li id ="recruiter-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="demo-pic" src="{{ url_for('static', filename='assets/images/rosa-two.png') }}" alt="Placeholder image"/>
+                      Evaluate
+                      <time>From her interface Rosa can see that Jim's request is something that does not need approval from HR, and knows that B READY will guide her through what to do next to secure this access for Jim.</time> 
+                    </div>
+                  </li>
+
+                  <li id ="recruiter-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="demo-pic" src="{{ url_for('static', filename='assets/images/rosa-three.png') }}" alt="Placeholder image"/>
+                      Act
+                      <time>B READY directs Rosa to file a ticket with the Security team to get access to all floors in the elevator, and also gives her a series of pre-populated reminders to ensure everything will be in place on the day.</time> 
+                    </div>
+                  </li>
+
+                  <li id ="recruiter-timeline">
+                    <div class = "animatable fadeInDown animationDelay">
+
+                      <img id="demo-pic" src="{{ url_for('static', filename='assets/images/rosa-four.png') }}" alt="Placeholder image"/>
+                      <time>Rosa communicates to Jim that she will have everything ready for him from the B READY interface. She feels confident she has done everything she needs to respond to Jim's request and provide an inclusive hiring experiences. </time> 
+                    </div>
+                  </li>
+
+
+
+
+                </ul>
+              </section>
+
+
+<!-- Candidate Features -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> KEY CANDIDATE FEATURES </h1>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12" id="problem-text">
+                        The following features each contribute to reducing uncertainty for candidates with disabilities. In order to demo the full candidate side prototype for yourself <a href="https://projects.invisionapp.com/share/C5N91OA9A2R#/screens">check out the link here</a>                         <br/><br/>
+                    </div>
+                  </div>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+
+                <h3>Understand</h3>
+
+                Detailed Descriptions<br/>
+                Clearly chunked information that reveals the tasks, tools and environment information relevant to the interview stage is easy to scan, and ensures all candidates receive the same level of detail.
+              </div>
+
+
+            <div class="col-md-4 col-sm-12"> 
+              <h3>Evaluate</h3>
+
+              360 Degree Photos<br/>
+              These 360 degree photo spheres allow candidates to navigate through internal spaces, and identify any potential features of the physical space that they might have questions about, instead of relying on someone else’s interpretation of what accessible might mean.
+            </div>
+
+          <div class="col-md-4 col-sm-12">
+            <h3>Act</h3>
+
+            Menu of Accommodation Options<br/>
+            The candidate can access and select a variety of suggested accomodation options that are proactively surfaced to them. They can also resubmit an accommodation request from earlier in their hiring process.<br/>
+
+         </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+
+<!-- Coordinator Features -->
+     <div class="row">
+         <div class="col-12">
+            <div id="sub-section">
+                    <h1> KEY COORDINATOR FEATURES </h1>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12" id="problem-text">
+                        The following features each contribute to reducing uncertainty for recruiting coordinators. In order to demo the full coordinator side prototype for yourself <a href="https://projects.invisionapp.com/share/C5N91OA9A2R#/screens">check out the link here</a> 
+                         <br/><br/>
+                    </div>
+                  </div>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+
+                <h3>Understand</h3>
+
+                A Timely View of Requests<br/>
+                As soon as a candidate makes an accommodation request, the recruiting coordinator will see that request pop up in their B READY interface, with a short description and links to learn more about the specific accommodation.
+              </div>
+
+
+            <div class="col-md-4 col-sm-12"> 
+              <h3>Evaluate</h3>
+
+              Guidance on Handling Requests<br/>
+              B READY will guide coordinators in addressing requests -- directing them to either file a ticket or send a message if it is something they have the authority to approve, or looping in Employee Relations if the accommodation is more complex. 
+            </div>
+
+          <div class="col-md-4 col-sm-12">
+            <h3>Act</h3>
+
+            Pre-populated Reminders and Communications<br/>
+            B READY provides pre-written emails, instant messages and calendar notifications in order to ensure that follow through happens on these requests if necessary. All coordinators need to do is edit or add these communications per their preference.
+         </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+<!-- Accessibility -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> ACCESSIBILITY </h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12" id="problem-text">
+                        People with physical disabilities are integral users of B READY;  therefore, we focused on making the app as digitally accessible as possible.   
+                         <br/><br/>
+
+
+            For people with mobility impairments we have included keyboard navigation. Elements throughout the page can be traversed using the tab, enter, and arrow keys.  <br/><br/>
+
+            For people with visual impairments we have designed and structured the app so it can be read with a screen reader and included alternate content for any featured images.  <br/><br/>
+
+            We've also considered other elements of web accessibility, using the IBM heuristics listed <a href="https://usabilitynews.bcs.org/content/conWebDoc/45729"> here https://usabilitynews.bcs.org/content/conWebDoc/45729</a> including ensuring appropriate color contrast and not relying solely on color as an indicator within the design.<br/>
+            
+
+                                    </div>
+                      <div class="col-md-6 col-sm-12">
+                        Below is an example video which demonstrates how a screen reader might interact with our 360 Photo experience:
+                      <iframe class="video" src="https://drive.google.com/file/d/1PPaYQunb9br8OoEtuP6yBgNcZDiEEcW2/preview"></iframe> 
+                    </div>
+
+
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+     
+
+
+    <div class="container">
+
+
+    <!-- Portfolio -->
+    <div id="blog_page">
+
+
+    </div><!-- End main page -->
+    </div><!-- end container -->
+    {% include "footer.html" %}
+  </body>
+</html>

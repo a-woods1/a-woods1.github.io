@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Evaluating B READY</title>
+
+    <!-- JS -->
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" /></script>
+
+    <script src="/SSUI-Homework-6/static/js/story.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->
+ <div id="page_title">
+    <div class="row">
+      <div id="heading" class="col-lg-7 col-sm-11">
+    How do we know that B READY is a successful design?
+  </div>
+  <div class="col-6">
+</div>
+</div>
+  </div>
+
+<!-- section1 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> OVERVIEW </h1>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        The need for B READY emerged from three months of research with our client during our Spring semester. Based on the problems that we identified, creating a web app to help recruiting coordinators and candidates with disabilities handle accommodation requests was important. Candidates with disabilities were not always sure if they should disclose, and recruiters an recruiting coordinators did not always know how to best handle accommodation requests. 
+                         <br/><br/>
+
+
+						However, how could we ensure that whatever we built would successfully address these problems? Our team used further research to both create a framework for measurement and test whether or not we were achieving the right results. <br/> <br/>
+
+						                        </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+<!-- checklist boxes -->
+<div id="sub-section">
+ 		<h1 id = "hidden"> KEY EVALUATION METRICS </h1>
+ 	 	<div class="row">
+ 		Our team decided to measure the success of our designs using the following criteria for each group. <br/><br/>
+
+ 		</div>
+ 		<div class="row">
+
+         <div class="col-md-6 col-sm-12">
+         	<b>Candidates with Disabilities</b><br/><br/>
+         	<input type="checkbox" checked> Understand <br/> Do I understand what is required for this stage of the interview? <br> <br/>
+			<input type="checkbox" checked> Evaluate <br/> Can I identify what I might need in terms of accommodation for this stage of the interview? <br> <br/>
+			<input type="checkbox" checked> Act <br/> Do I feel confident about requesting an accommodation? <br> <br/>
+         </div>
+
+         <div class="col-md-6 col-sm-12">
+         	<b>Recruiting Coordinators</b><br/><br/>
+         	<input type="checkbox" checked> Understand <br/> Do I understand what this candidate needs? <br> <br/>
+      <input type="checkbox" checked> Evaluate <br/> What do I have the power to do to implement this request? <br> <br/>
+      <input type="checkbox" checked> Act <br/> Can I easily implement this request? <br> <br/>
+         </div>
+
+    </div>
+</div>
+	
+
+
+<!-- section2 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> SUCCESS FOR CANDIDATES</h1>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        Candidates don't always know if they need to disclose their disability. In order to understand how we could address this, we conducted several co-design sessions with people with disabilities. In one of these sessions, a participant shared a mental model that has served us well for evaluating our prototype. They focus on the following steps when trying to understand if they should request an accommodation: 
+                    </div>
+                </div>
+
+			<div class='ui'>
+ 				<div class="row">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Understand </span><br/>
+					        What is expected of me?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Evaluate</span><br/>
+					        Will I need an accommodation?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Act</span><br/>
+					        How do I ask for an accommodation?
+						</div>
+						</div>
+					</div>
+			       </div>
+			     </div>
+
+			     <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        Our focus became on measuring the key attributes at each stage of this process for candidates with disabilities. Specifically we conducted over 15 usability tests and compared the answers to the following questions based on if a candidate was using our prototype vs the current resource (an email and PDF from a recruiter):
+                    </div>
+                </div>
+
+			<div class='ui'>
+ 				<div class="row">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Understand </span><br/>
+					        Do I understand what is required for this stage of the interview?<br/><br/>
+
+                  <b>Current Email and PDF</b><br/>
+                  0/10 could identify at least three pieces of information about the tasks, tools and environment for their upcoming interview<br/><br/>
+
+                 <b>B READY:</b><br/>8/10 participants could identify at least three pieces of information about the tasks, tools and environment for their upcoming interview 
+
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Evaluate</span><br/>
+					        Can I identify what I might need in terms of accommodation for this stage of the interview?<br/><br/>
+
+                  <b>Current Resources</b><br/>
+                  Using narrated videos, static images and floorplans helped some participants identify issues with physical space.<br/><br/>
+
+                 <b>B READY:</b><br/> However, 360 Photos like the kind in B READY helped candidates point out the most potential accommodations they might need.
+
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Act</span><br/>
+					        Do I feel confident about requesting an accommodation?<br/><br/>
+
+                  <b>Current Email</b><br/>
+                  1/6 participants felt confident requesting an accommodation via email, and it took them an average of 15 minutes.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY 5/6 participants felt confident requesting an accommodation, which took only five minutes.
+						</div>
+						</div>
+					</div>
+			       </div>
+			     </div>
+
+</div>
+
+<div id="sub-section">
+
+
+
+			<div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        We continued iterating on our designs until the prototype outperformed the email significantly. Some of the changes we made along the way include:<br/><br/>
+
+                    <div class="row">
+
+                                      <div class="col-md-3 col-sm-12">
+
+                              <div class=form-note>
+                                <div class=textAria>
+                                  <b>Creating accessibility call outs in our content to help users evaluate the need for an accommodation</b><br/>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3 col-sm-12">
+
+                              <div class=form-note>
+                                <div class=textAria>
+                                  <b>Including an immersive, visual view of key spaces to give candidates more detailed information about a space so they can assess if it will be accessible to them </b><br/>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3 col-sm-12">
+
+                              <div class=form-note>
+                                <div class=textAria>
+                                  <b>Creating an accommodations menu experience that gives candiates more confidence that our client has accessibility expertise. </b><br/>
+                                </div>
+                            </div>
+                          </div>
+
+
+                           <div class="col-md-3 col-sm-12">
+
+                              <div class=form-note>
+                                <div class=textAria>
+                                  <b>Favoring a one column design over a three column design that is more overwhelming for candidates to use </b><br/>
+                                </div>
+                            </div>
+                          </div>
+
+                                </div>
+
+                    </div>
+                </div>
+ 			</div>
+
+
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+<!-- quote -->
+
+<div id="subhead-dark">
+		     <div class="row">
+   
+			<div class ="col-lg-12 col-sm12">
+		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"This would be such a cool tool to have in a job interview. I am always so hesitant to ask for things but this makes me feel way more confident. It would be so nice to have a company say, we get it, there are things that you need and we are okay with providing them. Emailing is something I have always had to do and it is very stressful for me." - Cassie, Wheelchair User </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- section3 -->
+     <div class="row">
+         <div class="col-12">
+            <div id="subhead">
+                    <h1> SUCCESS FOR RECRUITING</h1>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        Similarly, we held several codesign sessions with recruiting coordinators to understand their current processes for handling accommodation requests. What were their pain points? What did they care most about in the experience? Two key points emerged that we decied to measure over fifteen usability studies:
+                    </div>
+                </div>
+
+
+                <div class='ui'>
+        <div class="row">
+
+
+          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+            <div class='ui_box_2'>
+              <div class='ui_box__inner2'>
+                  <span> Understand </span><br/>
+                  Do I understand what this candidate needs? <br/><br/>
+
+                  <b>Current State</b><br/>
+                  Coordinators frequently find out about accommodations needed in person right when the candidate needs them<br/><br/>
+
+                 <b>B READY:</b><br/> By creating confidence for candidates, we anticipate that B READY will give recruiters a much improved buffer time in order to process an accommodation request.
+            </div>
+            </div>
+          </div>
+
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                          <img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+
+
+
+          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+          <div class='ui_box_2'>
+              <div class='ui_box__inner2'>
+                  <span> Evaluate</span><br/>
+                  What do I have the power to do to implement this request? <br/><br/>
+
+                  <b>Current State</b><br/>
+                  Coordinators either send 100% of requests to Employee Relations or deal with 100% of them by themselves, depending on their seniority and/or how familiar they are with accessibility.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY 8/10 coordinators felt confident they had handled the accommodation request correctly, and 10/10 could identify which accommodations required HR review.
+            </div>
+            </div>
+          </div>
+
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                          <img class="bb-icons" src="/SSUI-Homework-6/static/assets/images/rightarrow.png" role="presentation"/>
+                        </div>
+ 
+          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+          <div class='ui_box_2'>
+              <div class='ui_box__inner2'>
+                  <span> Act</span><br/>
+                  Can I easily implement this request?<br/><br/>
+
+                  <b>Current Resources</b><br/>
+                  Using in person coordination, Email, Spreadsheets and without any protocol it can take a recruiting coordinator 24 steps and 140 minutes to handle three accommodations.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY it takes 8 steps and 7 minutes to handle those same three accommodations.
+            </div>
+            </div>
+          </div>
+             </div>
+           </div>
+
+                  </div>
+                </div>
+              </div>
+
+    <div id="sub-section">
+
+						Several design iterations helped us achieve an optimal level of efficiency while also giving recruiting coordinators peace of mind:<br/><br/>
+
+
+            <div class="row">
+
+                          <div class="col-md-3 col-sm-12">
+
+                  <div class=form-note>
+                    <div class=textAria>
+                      <b>Minimizing the number of steps involved with handling an accommodation request</b><br/>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-12">
+
+                  <div class=form-note>
+                    <div class=textAria>
+                      <b>Integrating with existing recruiting coordinator systems and tools </b><br/>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-12">
+
+                  <div class=form-note>
+                    <div class=textAria>
+                      <b>Providing self-service resources with more information about accommodations </b><br/>
+                    </div>
+                </div>
+              </div>
+
+
+               <div class="col-md-3 col-sm-12">
+
+                  <div class=form-note>
+                    <div class=textAria>
+                      <b>Reducing scrolling in favor of more clicks, which feel like less work for recruiting coordinators </b><br/>
+                    </div>
+                </div>
+              </div>
+
+                    </div>
+
+          </div>
+      
+
+
+<!-- quote -->
+
+<div id="subhead-dark">
+		     <div class="row">
+   
+			<div class ="col-lg-12 col-sm12">
+		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"“I would definitely recommend this tool to other coordinators! This will help us to be proactive rather than being reactive. I wish I had known about this earlier." - Recruiting Coordinator </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="container">
+
+
+
+    <!-- Portfolio -->
+    <div id="main_page">
+
+
+
+
+
+    </div><!-- End main page -->
+    </div><!-- end container -->
+    
+    <!-- Footer -->
+    <div id="copyright">
+    <div class="row">
+      <div class="col-6">
+        <span id="university">Carnegie Mellon University</span><br/>
+        <span class="degree_program">Master of Human Computer Interaction</span>
+      </div>
+      <div class="col-6">
+        <p align="right"><span class="degree_program">&copy;</span>2018</p>
+      </div>
+    </div><!--end row-->
+
+  </div><!--end copyright-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+  </body>
+</html>

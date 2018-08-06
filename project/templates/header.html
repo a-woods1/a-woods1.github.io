@@ -1,0 +1,61 @@
+
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="{{ url_for('home') }}">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="{{ url_for('home') }}">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="{{ url_for('solution') }}">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="{{ url_for('process') }}">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="{{ url_for('team') }}">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="{{ url_for('blog') }}">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('home') }}">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('solution') }}">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('process') }}">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('team') }}">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('blog') }}">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->

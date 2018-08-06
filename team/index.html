@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Meet the Team</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->
+
+<div id="page_title">
+    <div class="row">
+      <div id="heading" class="col-lg-7 col-sm-11">
+    We are a cross disciplinary team with backgrounds spanning education, journalism and artificial intelligence.
+  </div>
+  <div class="col-6">
+</div>
+</div>
+</div>
+
+<div id ="team_first_row" class="row">
+  <div class="col-md-4 col-sm-12">
+    <h1>TEAM</h1>
+      <p>We are a team of five HCI Master's students at Carnegie Mellon University with a diverse set of backgrounds. While this is our first foray into researching and designing for accessibility, we are all passionate about creating more equitable, accessible experiences with the help of technology.</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-md-7 col-sm-12">
+      <img id="team_photo" src="/SSUI-Homework-6/static/assets/images/TeamTone.jpg" alt="Team B READY stands together smiling"/>
+    </div>
+</div>
+
+<div class="row" id="team_element">
+  <div class="col-md-4 col-sm-12">
+    <h1 class="team_member" id="team_member_desc" aria-label = "Aaron Faucher">Aaron<br/>Faucher</h1>
+  </div>
+  <div class="col-md-4 col-sm-12" id = "team_member_desc">
+    <h2>I came to CMU from San Francisco, where I was working as a freelance interaction designer and developer for several AR/VR startups.</h2>
+    <p>I’m passionate about the ways emerging technologies can improve well-being. Prior to my design career, I had previous lives as an audio engineer and high school teacher.</p>
+  </div>
+  <div class="col-1">
+    <h4 id="team_member_desc">Links</h4>
+    <a class="team_links" href="https://www.linkedin.com/in/aaronfaucher" aria-label = "Aaron Faucher's LinkedIn page">LinkedIn</a> <br/>
+    <a class="team_links" href="http://afaucher.me/" aria-label = "Aaron Faucher's Portfolio">Portfolio</a> <br/>
+    <a class="team_links" href="https://github.com/afauch" aria-label = "Aaron Faucher's GitHub profile">GitHub</a> <br/>
+  </div>
+</div>
+<div class="col-1"></div>
+
+<div class="row" id="team_element">
+  <div class="col-md-4 col-sm-12">
+    <h1 class="team_member" id="team_member_desc" aria-label = "Jinping Liu">Jinping<br/>Liu</h1>
+  </div>
+  <div class="col-md-4 col-sm-12" id="team_member_desc">
+    <h2>I am a UX designer with 3 years of experience working at companies like Nokia and Tencent.</h2>
+    <p>Before MHCI, I had another master degree in industrial design in Finland. Years of working and living there had added a Nordic touch to my design style. Besides that, I am a good cook and travel lover.</p>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <h4 id="team_member_desc">Links</h4>
+    <a class="team_links" href="https://www.linkedin.com/in/jinping-liu-a2986360/" aria-label = "Jinping Liu's LinkedIn page">LinkedIn</a> <br/>
+    <a class="team_links" href="http://jinpingliu.com/" aria-label = "Jinping Liu's portfolio">Portfolio</a> <br/>
+    <a class="team_links" href="http://jinpingliu.com/resume.pdf" aria-label = "Jinping Liu's resume">Resume</a> <br/>
+</div>
+</div>
+<div class="col-1"></div>
+
+<div class="row" id="team_element">
+  <div class="col-md-4 col-sm-12">
+    <h1 class="team_member" id="team_member_desc" aria-label = "Likang Sun">Likang<br/>Sun</h1>
+  </div>
+  <div class="col-md-4 col-sm-12" id="team_member_desc">
+    <h2>I have a Master’s Degree in Education from Stanford University and have been a public school teacher for 5 years in California.</h2>
+    <p>I’m passionate about the ways emerging technologies can improve well-being. Prior to my design career, I had previous lives as an audio engineer and high school teacher.</p>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <h4 id="team_member_desc">Links</h4>
+    <a class="team_links" href="https://www.linkedin.com/in/likang-sun-364746132/" aria-label = "Likang Sun's LinkedIn page">LinkedIn</a> <br/>
+    <a class="team_links" href="http://likangdesign.com/" aria-label = "Likang Sun's portfolio">Portfolio</a> <br/>
+    <a class="team_links" href="http://likangdesign.com/Likang_Sun.pdf" aria-label = "Likang Sun's Resume">Resume</a>  <br/>
+  </div>
+</div>
+<div class="col-1"></div>
+
+<div class="row" id="team_element">
+  <div class="col-md-4 col-sm-12">
+    <h1 class="team_member" id="team_member_desc" aria-label = "Asha Toulmin">Asha<br/>Toulmin</h1>
+  </div>
+  <div class="col-md-4 col-sm-12" id="team_member_desc">
+    <h2>Prior to the MHCI program I spent six years at Google working on business strategy, sales, operations as well as hiring and diversity and inclusion.</h2>
+    <p>I was originally born in London, but raised in the U.S., retaining a love of tea and British murder mysteries.</p>
+  </div>  <div class="col-1">
+
+    <h4 id="team_member_desc">Links</h4>
+    <a class="team_links" href="https://www.linkedin.com/in/asha-toulmin-78818319/" aria-label = "Asha Toulmin's LinkedIn page">LinkedIn</a> <br/>
+    <a class="team_links" href="https://drive.google.com/file/d/1tQLOtx6lIkdvaLRPy23NUdAIlak4EKQp/view?usp=sharing" aria-label = "Asha Toulmin's resume">Resume</a> <br/>
+    <a class="team_links" href="https://github.com/toulmina" aria-label = "Asha Toulmin's GitHub profile">GitHub</a> <br/>
+  </div>
+</div>
+<div class="col-1"></div>
+
+<div class="row" id="team_element">
+  <div class="col-md-4 col-sm-12">
+    <h1 class="team_member" id="team_member_desc" aria-label = "Aubrie Woods">Aubrie<br/>Woods</h1>
+  </div>
+  <div class="col-md-4 col-sm-12" id="team_member_desc">
+    <h2>I am a software engineer, UX designer, and researcher currently working for Carnegie Mellon’s Software Engineering Institute.</h2>
+    <p>Originally from San Francisco, I received my Master’s degree in Computer Science (Artificial Intelligence) from Stanford University before joining the MHCI program. I love to travel, and am thrilled to be relocating to New York this summer.</p>
+  </div>
+  <div class="col-1">
+
+    <h4 id="team_member_desc">Links</h4>
+    <a class="team_links" href="https://www.linkedin.com/" aria-label="Aubrie Woods's LinkedIn page">LinkedIn</a> <br/>
+    <a class="team_links" href="http://aubriewoods.com/" aria-label = "Aubrie Woods's Portfolio">Portfolio</a> <br/>
+    <a class="team_links" href="https://github.com/a-woods1" aria-label = "Aubrie Woods's GitHub profile">GitHub</a> <br/>
+  </div>
+</div>
+<div class="col-1"></div>
+    
+    <!-- Footer -->
+    <div id="copyright">
+    <div class="row">
+      <div class="col-6">
+        <span id="university">Carnegie Mellon University</span><br/>
+        <span class="degree_program">Master of Human Computer Interaction</span>
+      </div>
+      <div class="col-6">
+        <p align="right"><span class="degree_program">&copy;</span>2018</p>
+      </div>
+    </div><!--end row-->
+
+  </div><!--end copyright-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+  </body>
+</html>

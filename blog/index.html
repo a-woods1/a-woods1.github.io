@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Overview</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+  
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->
+  <div id="page_title">
+    <div class="row">
+      <div id="heading" class="col-7">
+    Follow our progress as we work toward a more inclusive hiring experience
+  </div>
+  <div class="col-6">
+</div>
+</div>
+  </div>
+    <!-- Header -->
+    <div class="container">
+
+
+    <!-- Portfolio -->
+    <div id="main_page">
+      <section id="portfolio">
+        <div class="masonry"><br/>
+
+           <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_10">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/jp-office.png" role="presentation"/>
+                <div class="blog_week">Week 10</div>
+                <div class="blog_title">How Do You Say Goodbye?</div>
+              </div>
+            </a>
+          </div>
+
+           <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_9">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/slide-one.png" role="presentation"/>
+                <div class="blog_week">Week 09</div>
+                <div class="blog_title">If We Could Turn Back Time</div>
+              </div>
+            </a>
+          </div>
+
+           <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_8">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/Service-Flow.png" role="presentation"/>
+                <div class="blog_week">Week 08</div>
+                <div class="blog_title">Designing Decisions</div>
+              </div>
+            </a>
+          </div>
+
+
+           <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_7">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/double-diamond.png" role="presentation"/>
+                <div class="blog_week">Week 07</div>
+                <div class="blog_title">Divergence Before The Convergence</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_6">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/voice-over.png" role="presentation"/>
+                <div class="blog_week">Week 06</div>
+                <div class="blog_title">Racing Down Three Lanes</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_5">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/variation-one.png" role="presentation"/>
+                <div class="blog_week">Week 05</div>
+                <div class="blog_title">Accelerating the Pace</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_4">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/buy-a-feature.png" role="presentation"/>
+                <div class="blog_week">Week 04</div>
+                <div class="blog_title">Buy a Feature, Any Feature</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_3">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/technology-slide-copy.png" role="presentation"/>
+                <div class="blog_week">Week 03</div>
+                <div class="blog_title">Finding a New Need</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_2">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/futurevscurrent.png" role="presentation"/>
+                <div class="blog_week">Week 02</div>
+                <div class="blog_title">Starting to Sprint</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="/SSUI-Homework-6/blog/week_1">
+              <div class="item">
+                <img class="blog_image" src="/SSUI-Homework-6/static/assets/images/dimensions-of-disclosure.png" role="presentation"/>
+                <div class="blog_week">Week 01</div>
+                <div class="blog_title">Welcome to New York!</div>
+              </div>
+            </a>
+          </div>
+
+
+
+        </div>
+        <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
+      </section><!-- end portfolio section -->
+
+    </div><!-- End main page -->
+    </div><!-- end container -->
+
+    <!-- Footer -->
+    <div id="copyright">
+    <div class="row">
+      <div class="col-6">
+        <span id="university">Carnegie Mellon University</span><br/>
+        <span class="degree_program">Master of Human Computer Interaction</span>
+      </div>
+      <div class="col-6">
+        <p align="right"><span class="degree_program">&copy;</span>2018</p>
+      </div>
+    </div><!--end row-->
+
+  </div><!--end copyright-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1055 @@
+@font-face {
+  font-family: SimplyGlamorous;
+  src: url(../fonts/Simply-Glamorous.ttf);
+}
+
+@font-face {
+  font-family: Palatino;
+  src: url(../fonts/Palatino.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font_heading: Raleway;
+@font_body: Palatino;
+@lg_logo_font_size: 32px;
+@md_logo_font_size: 28px;
+@sm_logo_font_size: 26px;
+@xs_logo_font_size: 22px;
+
+
+@page_color: #F2F1F1;
+@modal_color: #20252A;
+@accent_color: #42B3AD;
+@text_color: #000000;
+@icon_color: #B7BCBE;
+
+
+.container{
+  width: 70%;  
+  margin-top: 5%;
+}
+
+#main_page{
+    background-color: @page_color;
+    width: 100%;  
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+body{
+	font-family: @font_body;
+    font-size: 16px;
+}
+
+.logo{
+    font-family: SimplyGlamorous;
+    color: @accent_color;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+#logo{ 
+    font-size: @lg_logo_font_size;
+    .logo;
+}
+
+.role{
+    font-family: @font_body;
+    color: @accent_color;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+#role{
+    margin-left: 25px;
+    font-size: @lg_logo_font_size / 2;
+    .role;
+}
+    
+.section{
+  margin-top: 80px;  
+}
+
+#heading{
+    font-family: @font_heading;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1{  
+    font-size: 30px; 
+    margin-bottom: 100px;
+    text-align: center;
+    #heading
+}
+
+h2{
+    font-size: 20px;
+    #heading
+}
+
+h3{
+    font-family: @font_heading;
+    font-size: 18px;
+    line-height: 3;
+}
+
+h4{
+    font-family: @font_heading;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h5{
+    font-family: @font_heading;
+    font-size: 9px;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+h6{
+    font-family: @font_heading;
+    font-size: 8px;
+    line-height: 1;
+}
+
+.section-title [class*=fa]{
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 120px;
+    color: @text_color;
+    z-index: -1;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* Header */
+
+#main_ul {
+  float: right;
+  list-style-type: none;
+  text-align: right;
+}
+
+.main_a {
+  color: @text_color;
+  text-decoration: none; /* no underline */
+  font-weight: bold;
+}
+
+.main_a:hover { 
+  .main_a
+}
+
+#main_hr {
+    float: right;
+    margin-top: 3%;
+    margin-bottom: 0px;
+    border: none;
+    width: 250px;
+    height: 3px;
+    background-color: @text_color;
+}
+
+#menu_bars{
+    font-size: 28px;  
+    text-align: right;   
+    margin-top: -12px;        
+}
+
+/* modal */
+    
+#btn-close-modal {
+    width: 100%;
+    height: 75px;
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-top: 2%;
+    padding-right: 5%;
+}
+
+#animatedModal{
+    display: none;
+}
+
+#modal_row {
+    background-color: @modal_color;
+    padding-top: 75px;
+}
+
+.modal_a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.modal_a:hover { 
+    .modal_a;
+    text-decoration: none; /* no underline */ 
+}
+
+#modal_ul {
+    list-style-type: none;
+    width: 100%;
+    margin: auto; 
+    text-align: center;
+}
+
+.modal_hr {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    border: none;
+    width: 150px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+/* Portfolio */
+
+.masonry {
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+
+.item {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+.portfolio_image {
+    position: relative;
+    display: inline-block;
+}
+
+#overlay{
+    display: none;
+    color: #FFFFFF;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.overlay {
+    font-size: 12px;
+    #overlay
+}
+
+#hover_overlay{
+    width: 100%;
+    background: @accent_color;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    img {
+        vertical-align: top; /* Default is baseline, this fixes a common alignment issue */
+    }
+}
+
+.portfolio_image:hover .overlay {
+    height: 42px;
+    bottom: 24px;
+    #hover_overlay
+}
+
+/* Skills */
+     
+#skills .row.skills_line {
+    height: 6px;
+    background: @accent_color;
+    margin-bottom: 24px;
+    visibility: visible;
+}
+
+#skills .skills_line .skills_dot {
+    margin: -7px auto auto auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: @accent_color;
+    border: 5px solid @page_color;
+    border-radius: 50%;
+}
+
+#skills_icon{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 24px;
+    color: @icon_color;
+    border: 5px solid @accent_color;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+    text-align: center;
+}
+
+.skills .icon {
+    width: 160px;
+    height: 160px;
+    font-size: 72px;
+    line-height: 140px;
+    #skills_icon
+}
+
+.no-opacity .skills .icon {
+	color: #FFFFFF;
+}
+
+.skills .icon:after {
+	pointer-events: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: @accent_color;
+    border-radius: 50%;
+    border: 2px solid @accent_color;
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+.skills .icon:hover{
+    color: #FFFFFF;
+}
+
+.skills .icon:hover:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	transition: all 0.4s ease-out;
+}
+
+
+.skills h2 {
+    margin-bottom: 24px;
+}
+
+.skills.bottom-row p {
+    margin-top: 48px;
+}
+
+#dev_skills_span {
+    display: inline-block;
+    text-align: left;
+}
+
+.dev_skills span {
+  width: 50px;
+}
+
+/* About */
+
+.banner{
+    height: 275px;
+    width: 100%;
+    background: url('../assets/images/about_bg.jpg') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#my_photo_container{
+    float: left;
+}
+
+#my_photo{
+    width: 175px;
+}
+
+#card_half{
+    height: 200.433px;
+    width: 225px;
+    float: left;
+    background-color: white;
+}
+
+#card{
+    margin: -200px auto auto auto; 
+    height: 240px;
+    width: 400px;
+    background-color: none;
+    position: relative;
+}
+
+#card_base{
+    background-color: @accent_color;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#card_text{
+    margin: 25px auto auto 40px; 
+}
+
+#about_text{
+    margin-top: 40px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bio {
+    font-size: 10pt;
+}
+
+.social_media{
+    margin: 0 0 0 135px;
+    padding: 0 0 0 0;
+}
+
+.social_media li{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+#social_media_li_a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+    text-align: center;
+}
+
+.social_media li a{
+    font-size: 16px;
+    line-height: 40px;
+    #social_media_li_a
+}
+
+.social_media li a:hover{
+    padding: 0;
+    color: @icon_color;
+    text-decoration: none;
+}
+
+/* Contact */
+
+#contact{
+    padding-bottom: 15px;
+}
+#contact_content{
+    width: 80%;
+    margin: auto;
+}
+
+#form_margin{
+    width: 15px;
+}
+
+#signature{
+    font-family: SimplyGlamorous;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#submit_button {
+    border: 3px solid @text_color;
+    float: right;
+    background-color: @page_color;
+}
+
+#copyright{
+    margin: 15px auto auto;
+    font-size: 10pt;
+}
+
+:placeholder-shown {
+  font-family: @font_body;
+  font-size: 14px;
+}
+
+
+/* xs (for phones - screens less than 768px wide) */
+@media screen and (max-width: 767px) and (min-width: 0px) {
+    
+    #for_testing{
+        width: 100%;
+        height: 10px;
+        background-color: green;
+    }
+    
+    body{
+        font-size: 12px;
+    }
+    
+    /* Header */
+    
+    .container{
+        width: 90%;  
+    }
+    
+    #main_page{
+        background-color: #FFFFFF;
+        width: 90%;  
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #logo{
+        font-size: @xs_logo_font_size;
+        .logo;
+    }
+    
+    #role{
+        margin-left: 18px;
+        font-size: @xs_logo_font_size / 2;
+        .role;
+    }   
+    
+    .modal-content{
+        border: 1px solid "#20252a";
+    }
+
+    .section{
+        margin-top: 25px;  
+    }
+    
+    h1{
+        font-size: 18px;
+        margin-bottom: 25px;
+        #heading        
+    }
+    
+    h2{
+        font-size: 15px;
+        #heading
+    }
+      
+    h3{
+        font-family: @font_heading;
+        font-size: 15px;
+        line-height: 4;
+    }
+    
+    h4{
+        font-family: @font_heading;
+        font-size: 11px;
+        line-height: .75;
+        font-weight: bold;
+    }
+
+    h5{
+        font-family: @font_heading;
+        font-size: 7px;
+        line-height: .75;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    h6{
+        font-family: @font_heading;
+        font-size: 6px;
+        line-height: .25;
+    }
+    
+    /* Portfolio */
+   
+    .masonry {
+        background-color: @page_color;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    
+    .portfolio_image:hover .overlay {
+        font-size: 6px;
+        bottom: 18px;
+        height: 30px;
+        #hover_overlay
+    }
+    
+    .mobile_hidden {
+        display: none;
+    }
+   
+    #show_more {
+        font-size: 12px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    /* Skills */
+    
+    #skills .row.skills_line {
+        visibility: hidden;
+    }
+ 
+    #skills p {
+        margin-bottom: 0px;
+    } 
+   
+    #skills .mobile_icon {
+        margin-top: 50px;
+    } 
+    
+    /* About */
+   
+    .banner{
+        height: 150px;
+        width: 200%;
+        background: url('../assets/images/about_bg.jpg') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        margin-left: -50%;
+    }
+
+    #my_photo{
+        width: 100px;
+    }
+
+    
+    #card_half{
+        height: 114.553px;
+        width: 150px;
+        float: left;
+        background-color: white;
+    }
+    
+    #card{
+        margin: -114px auto 10px auto; 
+        height: 140px;
+        width: 250px;
+        background-color: none;
+        position: relative;
+    }
+    
+    #card_base{
+        background-color: @accent_color;
+        width: 100%;
+        height: 26px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #card_text{
+        margin: 10px auto auto 20px; 
+    }
+
+    .social_media{
+        margin: 0 0 0 75px;
+        padding: 0 0 0 0;
+    }
+
+    .social_media li{
+        display: inline-block;
+        margin: 0 10px 10px 0;
+    }
+
+    .social_media li a{
+        font-size: 12px;
+        line-height: 25px;
+        #social_media_li_a
+    }
+
+    #about_text{
+        margin-top: 40px;
+        width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Contact */
+    #contact{
+        background-color: @page_color;
+    }
+    
+    #contact-form{
+        margin-top: 25px;
+    }
+    
+    #signature{
+        font-size: 16px;
+    }
+    
+    #submit_button {
+        border: 3px solid @text_color;
+        width: 100%
+    }
+}
+
+.wow { 
+    visibility: hidden; 
+}
+
+
+/* sm (for tablets - screens equal to or greater than 768px wide) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    
+    #for_testing{
+        width: 100p%;
+        height: 10px;
+        background-color: yellow;
+    }
+    
+    body{
+       font-size: 14px; 
+    }
+    
+    
+    #logo{
+        font-size: @sm_logo_font_size;
+        .logo;
+    }
+    
+    #role{
+        margin-left: 20px;
+        font-size: @sm_logo_font_size / 2;
+        .role;
+    }  
+            
+    h1{
+        margin-bottom: 75px;
+        font-size: 20px;
+        line-height: 64px;
+        #heading
+    }
+    
+    h2{ 
+        font-size: 14px;
+        #heading
+    }
+    
+    h3{
+        font-family: @font_heading;
+        font-size: 14px;
+        line-height: 4;
+    }
+    
+    h4{
+        font-family: @font_heading;
+        font-size: 10px;
+        line-height: .75;
+        font-weight: bold;
+    }
+
+    h5{
+        font-family: @font_heading;
+        font-size: 7px;
+        line-height: .75;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    h6{
+        font-family: @font_heading;
+        font-size: 7px;
+        line-height: .75;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    /* Portfolio */
+
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    
+    .portfolio_image:hover .overlay {
+        font-size: 10px;
+        height: 42px;
+        bottom: 20px;
+        #hover_overlay
+    }
+    
+    /* Skills */
+    
+    .skills .icon {
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+        line-height: 80px;
+        #skills_icon 
+    }
+    
+    .dev_skills span {
+      width: 38px;
+      #dev_skills_span
+    }
+
+    /* About */
+    
+    .banner{
+        height: 200px;
+        width: 100%;
+        background: url('../assets/images/about_bg.jpg') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+    
+    #my_photo{
+        width: 125px;
+    }
+
+    
+    #card_half{
+        height: 143.167px;
+        width: 175px;
+        float: left;
+        background-color: white;
+    }
+    
+    #card{
+        margin: -143px auto 10px auto; 
+        height: 169px;
+        width: 300px;
+        background-color: none;
+        position: relative;
+    }
+    
+    #card_base{
+        background-color: @accent_color;
+        width: 100%;
+        height: 26px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #card_text{
+        margin: 15px auto auto 20px; 
+    }
+
+    .social_media{
+        margin: 0 0 0 100px;
+        padding: 0 0 0 0;
+    }
+
+    .social_media li{
+        display: inline-block;
+        margin: 0 10px 10px 0;
+    }
+
+    .social_media li a{
+        font-size: 12px;
+        line-height: 24px;
+        #social_media_li_a
+    }
+    
+    /* Contact */
+    
+    #contact-form{
+        margin-top: 25px;
+    }
+}
+
+
+/* md (for small laptops - screens equal to or greater than 992px wide) */
+@media screen and (max-width: 1199px) and (min-width: 992px) { 
+    #for_testing{
+        width: 100%;
+        height: 10px;
+        background-color: orange;
+    }
+    
+    body{
+       font-size: 15px; 
+    }
+    
+    /* Header */
+    
+    #logo{
+        font-size: @md_logo_font_size;
+    }
+
+    #role{
+        margin-left: 22px;
+        font-size: @md_logo_font_size / 2;
+        .role;
+    }
+
+    .overlay {
+        font-size: 10px;
+        #overlay
+    }
+    
+    .portfolio_image:hover .overlay {
+        height: 42px;
+        bottom: 22px;
+        #hover_overlay
+    }
+    
+    h1{
+        font-size: 25px;
+        line-height: 64px;
+        #heading
+    }
+
+    h2{
+        font-size: 18px;
+        #heading
+    }
+
+       
+    h3{
+        font-family: @font_heading;
+        font-size: 16px;
+        line-height: 3;
+    }
+
+    h4{
+        font-family: @font_heading;
+        font-size: 12px;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    h5{
+        font-family: @font_heading;
+        font-size: 9px;
+        line-height: 1;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+  
+    h6{
+        font-family: @font_heading;
+        font-size: 7px;
+        line-height: .75;
+    }
+
+    /* Skills */
+    
+    .skills .icon {
+        width: 140px;
+        height: 140px;
+        font-size: 65px;
+        line-height: 120px;
+        #skills_icon
+    }
+    
+    /* About */
+    
+    .banner{
+        height: 225px;
+        width: 100%;
+        background: url('../assets/images/about_bg.jpg') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+    
+    #my_photo{
+        width: 150px;
+    }
+
+    
+    #card_half{
+        height: 171.8px;
+        width: 200px;
+        float: left;
+        background-color: white;
+    }
+    
+    #card{
+        margin: -172px auto 10px auto; 
+        height: 205px;
+        width: 350px;
+        background-color: none;
+        position: relative;
+    }
+    
+    #card_base{
+        background-color: @accent_color;
+        width: 100%;
+        height: 33px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #card_text{
+        margin: 20px auto auto 25px; 
+    }
+
+    .social_media{
+        margin: 0 0 0 115px;
+        padding: 0 0 0 0;
+    }
+
+    .social_media li{
+        display: inline-block;
+        margin: 0 10px 10px 0;
+    }
+
+    .social_media li a{
+        font-size: 14px;
+        line-height: 30px;
+        #social_media_li_a
+    }
+}
+
+
+/* lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+@media screen and (min-width: 1200px) { 
+    #for_testing{
+        width: 100%;
+        height: 10px;
+        background-color: red;
+    }
+}

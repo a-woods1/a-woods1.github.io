@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Nine</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="/SSUI-Homework-6/blog/">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">If We Could Turn Back Time 
+           <div class="blog_week">WEEK 9</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+      <p>How often do you get the chance to do a project over again? Well, due to the nature of our Capstone, we find ourselves in a somewhat similar place to where we were at the end of Spring semester. However, this time around we have the benefit of hindsight! Here are three key things we are doing differently this time around when it comes to polishing off client deliverables:</p>
+
+      <h2>Take advantage of the IGI model</h2>
+        <p>Okay, so IGI may or may not be a technique that we made up, but this language and approach has been really useful to us in thinking through workflow for major deliverables. IGI stands for Individual, Group, Individual. The idea is to give group members individual work time to work on pieces of a deliverable, then use group time to synthesize these pieces into one common vision. Once this group common vision is in place then we can assign individual ownership to different parts of that vision for completion. </p><br/>
+
+        <p>For example, at the end of Spring semester, we had one owner for the team presentation. That person put together a complete outline of the entire presentation themself, and drove much of the work on editing and refining the presentation based on others’ comments. Not only did this put a lot of pressure on one person, but it also made other group members feel they didn’t have a true voice in the presentation. This time around, using IGI we’ve created much better work distribution and sense of ownership.</p>
+
+      <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/Slides-Outline.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">During the Group section, we collaboratively drew out every slide in the presentation to have one map that we agree on as a team</p><br/>
+
+      <h2>Make it usable </h2>
+        <p>At the end of Spring, we also ran into some issues with dependency and single points of failure. For example, a single Sketch file contained our service blueprint, and it was unclear which version was the most up to date. Additionally, we created a visual style that was really dependent on the skills of one person. Our team website had a code setup that made it difficult for straight CSS editing. </p><br/>
+
+        <p>This time around, we’re doing three new things:</p>
+        <ol>
+          <li>Ensuring we have the right tools for sharing, updating and merging our work (besides Github we have been using Abstract and Zeppelin for design work)</li>
+          <li>Building structure into work that allows for easy manipulation. For example, highlighting elements in React code that enable easier identification for CSS styling.</li>
+          <li>Leveraging more templates for visual styling. Below are examples of the initial variations we made for our final presentation in Google slides, that anyone can copy and update with their own content </li>
+        </ol>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/slide-one.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/></div>
+          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/slide-two.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/></div>
+          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/slide-three.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/></div>
+        </div>
+  
+      <div class="row">
+        <p class="photo_caption">Three variations of a visual template for our final presentation</p><br/>
+      </div><br/>
+
+      <h2>Hear from the horse’s mouth</h2>
+      <p>Finally, it sounds simple, but we’re being more proactive about asking our clients and faculty for their opinions. Last semester we sort of disappeared into a hole for two weeks and came out the other end with a presentation. This time around, we’re scheduling more check ins and soliciting more feedback ahead of time to ensure that what we deliver meets (and hopefully exceeds!) expectations.</p><br/>
+
+
+
+      <br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Up<br/>Next</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 10</div>
+      <h2>How Do You Say Goodbye?</h2>
+      <p>It’s hard to believe but we are in the last week of work with our client. This project has taught us so many lessons, it’s hard to capture all of them.</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="/SSUI-Homework-6/blog/week_10">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    
+    <!-- Footer -->
+    <div id="copyright">
+    <div class="row">
+      <div class="col-6">
+        <span id="university">Carnegie Mellon University</span><br/>
+        <span class="degree_program">Master of Human Computer Interaction</span>
+      </div>
+      <div class="col-6">
+        <p align="right"><span class="degree_program">&copy;</span>2018</p>
+      </div>
+    </div><!--end row-->
+
+  </div><!--end copyright-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+  </body>
+</html>

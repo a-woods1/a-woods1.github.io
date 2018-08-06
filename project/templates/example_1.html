@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Bloomberg</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <!-- Header -->
+    <div class="container">
+    {% include "header.html" %}
+
+    <!-- Portfolio -->
+    <div id="main_page">
+      <section id="portfolio">
+        <div class="masonry">
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+        </div>
+        <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
+      </section><!-- end portfolio section -->
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+	    <h1 class="section-title">Section heading</h1>
+        <div class="row skills wow fadeInLeft" data-wow-duration="2s">
+		  <div class="col-md-3 text-center">
+            <a href="#skills" class="icon">
+              <i class="fa fa-question"></i>
+            </a>
+		    <h2>Subheading</h2>
+	      </div>
+          <!-- for xs -->
+	      <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+            <!-- Research -->
+            <p align="center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+  		  </div>
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none">
+			  <a href="#skills" class="icon mobile_icon">
+                <i class="fa fa-sticky-note-o"></i>
+              </a>
+              <h2>Subheading</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+            <!-- Design -->
+            <p align="center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+		  </div>
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none">
+		    <a href="#skills" class="icon mobile_icon">
+              <i class="fa fa-code"></i>
+            </a>
+			<h2>Subheading</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+            <p align="center" class="dev_skills">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+	      </div>
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none">
+            <a href="#skills" class="icon mobile_icon">
+              <i class="fa fa-bar-chart-o"></i>
+            </a>
+            <h2>Subheading</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+		    <p align="center">
+            <!-- Evaluation -->
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <!-- end for xs -->
+		  <div class="col-md-3 d-none d-md-block">
+            <!-- Design -->
+            <p align="center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+		  </div>
+		  <div class="col-md-3 text-center d-none d-md-block">
+		    <a href="#skills" class="icon">
+              <i class="fa fa-code"></i>
+            </a>
+			<h2>Subheading</h2>
+		  </div>
+		  <div class="col-md-3 d-none d-md-block">
+		    <p align="center">
+            <!-- Evaluation -->
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+		</div><!-- end top row -->
+
+        <div class="row skills_line">
+		  <div class="col-md-3 d-none d-md-block"><span class="skills_dot"></span></div>
+		  <div class="col-md-3 d-none d-md-block"><span class="skills_dot "></span></div>
+		  <div class="col-md-3 d-none d-md-block"><span class="skills_dot"></span></div>
+	      <div class="col-md-3 d-none d-md-block"><span class="skills_dot"></span></div>
+		</div><!-- end row -->
+
+		<div class="row skills bottom-row wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+	      <div class="col-md-3 d-none d-md-block">
+            <!-- Research -->
+            <p align="center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+  		  </div>
+          <div class="col-md-3 text-center d-none d-md-block">
+            <h2>Subheading</h2>
+			  <a href="#skills" class="icon">
+                <i class="fa fa-sticky-note-o"></i>
+              </a>
+		  </div>
+		  <div class="col-md-3 d-none d-md-block">
+            <p align="center" class="dev_skills">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+	      </div>
+          <div class="col-md-3 text-center d-none d-md-block">
+		    <h2>Subheading</h2>
+            <a href="#skills" class="icon">
+              <i class="fa fa-bar-chart-o"></i>
+            </a>
+		  </div>
+		</div><!-- end bottom row -->
+	  </section><!-- dnd skills section -->
+
+      <!-- About -->
+      <section id="about" class="section">
+            <h1 class="section-title">Section heading</h1>
+              <div class="banner"></div>
+              <div id="card">
+                <div id="my_photo_container" class="wow fadeInLeft" data-wow-duration="1.5s"><img id="my_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}"></div>
+                <div id="card_half" class="wow fadeInRight" data-wow-duration="1s">
+                  <div id="card_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+                <div id="card_base" class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                  <ul class="social_media">
+                    <li><a href="#twitter-link"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#facebook-link"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="#pinterest-link"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#instagram-link"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#linkedin-link"><i class="fa fa-linkedin-square"></i></a></li>
+                  </ul>
+                </div>
+              </div> <!-- end card -->
+
+
+          <div class="row">
+            <div class="col-12">
+              <div id="about_text">
+                <h3 align="center"></h3>
+			    <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+          <div id="contact_content" class="container-fluid">
+
+            <h1 class="section-title">Section heading</h1>
+
+
+            <div class="row">
+              <div class="col-lg-5 col-md-12 wow fadeInLeft" data-wow-duration="1.5s">
+                <div id="address">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div> <!--End address -->
+            </div>
+            <div class="col-lg-7 col-md-12 wow fadeInRight" data-wow-duration="1.5s">
+              <form id="contact-form">
+                <div class="form-group">
+                  <div class="controls">
+                    <input id="contact-name" name="contactName" placeholder="Name" class="form-control requiredField" type="text"/>
+                  </div>
+                </div><!-- end name input -->
+                <div class="form-group">
+		          <div class=" controls">
+			        <input id="contact-mail" name="_replyto" placeholder="Email" class="form-control requiredField" type="email" />
+			      </div>
+	            </div><!-- end email input -->
+		        <div class="form-group">
+		          <div class="controls">
+			        <input id="contact-subject" name="subject" placeholder="Subject" class="form-control input-lg requiredField" type="text" />
+			      </div>
+	            </div><!-- end subject input -->
+			    <div class="form-group">
+                  <div class="controls">
+			        <textarea id="contact-message" name="comments" placeholder="Content" class="form-control input-lg requiredField" rows="5"></textarea>
+			      </div>
+	            </div><!-- end message textarea -->
+                <button id="submit_button" name="submit" type="submit" onclick="return false;">Send</button>
+                <input type="hidden" name="submitted" id="submitted" value="true" />
+		      </form><!-- end form -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- End main page -->
+
+    <!-- Footer -->
+    <div id="copyright">
+        <p>@2018 by Team Bloomberg. All rights reserved.</p>
+    </div>
+    </div><!-- end container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/smooth-scroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animatedModal.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>

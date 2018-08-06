@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Six</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Racing Down Three Lanes 
+           <div class="blog_week">WEEK 6</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+
+      <p>Our team shifted to a rapid design, build, testing phase this week! Part of the change in our work has been to move into parallel lanes so we can move faster while checking in together.</p>
+
+      <div class="row">
+        <div class="col-12">
+
+          We began by having the entire team agree on the key user flows that we wanted to build out both for candidates with disabilities and for recruiters<br/><br/>
+        
+        </div>
+      </div>
+
+
+       <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h3> The Research Lane </h3>
+          Research created a protocol to measure and evaluate the success of our designs. This week focused on comprehension -- does a candidate understand the information in this interface, and do they know how to request an accommodation? <br/><br/>
+
+          Later, research and design conducted five user think aloud sessions and synthesized feedback on how our designs were successful and unsuccessful in achieving the goals of comprehension, making changes as necessary between tests
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <h3> The Design Lane </h3>
+
+          Design created multiple variations of what key flows would look like for candidates with disabilities<br/><br/>
+
+          The Tech and Design teams caught up on their initial work to understand what parts of our use cases needed to built, what needed to be designed and what needed to be both built and designed 
+        </div>
+
+       <div class="col-md-4 col-sm-12">
+          <h3> The Tech Lane </h3>
+
+          Tech began setting up coding environments and infrastructure to build out the web app and immersive “street view experience”<br/><br/>
+
+          Tech also continued to build out and test basic prototypes for functionality and accessibility
+
+        </div>
+      </div> <br/>
+
+
+
+      <p>Based on last week, we’re excited to have a few different things built out at this stage:</p><br/>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+        <h3>Research Lane</h3>
+        <p>In addition to testing and collecting feedback, we also created a full taxonomy of accommodations--what the accommodation is, when in the hiring process it would be useful, and what it would take on our client's side to implement this accommodation (e.g. would the candidate need to supply medical documentation). This way, we have the content to properly inform our designs.</p>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <h3>Design Lane</h3>
+        <p>We created <a class="team_links" href="https://projects.invisionapp.com/share/MQM2Y99JU9C#/screens/305876164">several iterations</a> of a candidate’s potential journey through our tool, as well as low/medium fidelity designs for recruiters to manage and respond to accommodation requests.</p>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+      <h3>Technology Lane</h3>
+      <p>In addition to a prototype of our <a class="team_links" href="http://afaucher.me/bb-immersive-preview/">immersive room experience</a> that is accessible via keyboard, we also created a cheat sheet for understanding VoiceOver, as screen reader accessibility will be a key component of our prototype for candidates with visual impairments.</p>
+      </div>
+      </div>
+
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/voice-over.png') }}" alt="A cheat sheet with the corresponding keyboard commands for Apple's Voice Over (e.g. for Stop Reading, the Control Key"/><br/><br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Up<br/>Next</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 7</div>
+      <h2>Divergence Before The Convergence</h2>
+      <p>Assuming you’ve made it this far in our blog series, you are probably not a stranger to the double diamond...</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="{{ url_for('blog_week_7') }}">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    {% include "footer.html" %}
+  </body>
+</html>

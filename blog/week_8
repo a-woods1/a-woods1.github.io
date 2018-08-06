@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Eight</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <div id="header" class="row">
+      <div class="col-sm-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">
+            TEAM B READY
+          </span>
+        </a>
+      </div>
+      <div class="col-sm-6 d-none d-lg-block">
+        <nav>
+          <ul id="main_ul" class="menu">
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+            </li>
+            <li class="main_li">
+                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+            </li>
+            <li class="main_li">
+              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="menu_bars" class="col-sm-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div> <!--end header-->
+
+
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end animatedModal -->
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="/SSUI-Homework-6/blog/">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Designing Decisions 
+           <div class="blog_week">WEEK 8</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+      <p>As we head into our final four weeks, and converge on delivering something for our client they are decisions galore to be made! Here are four ways our team is currently making decisions in this final stretch:</p>
+
+      <ol>
+        <li><h2>Focus on the happy path</h2></li>
+        <p>In order to give a holistic vision of the value our designs can provide, we’ve outlined a “happy path” for both candidates with disabilities and recruiting coordinators.</p>
+
+      <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/Service-Flow.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">An example section of our happy path</p><br/>
+
+      <p>This happy path gives us a clear sense of what we need to present a compelling vision, and helps us make decisions about which interaction flows and work to prioritize. For example, when debating whether or not to make a login screen design, we realized that it would make sense to have one based on a story we want to tell as  part of our happy path.</p>
+
+              <li><h2>Make it accessible</h2></li>
+              <p>Digital accessibility has governed several of design decisions, and our team is in the middle of conducting a heuristic evaluation specifically focused on accessibility, based on accessibility heuristics developed by IBM. Three of these include</p>
+
+              <ul>
+                <li><u>Allow complete and efficient keyboard usage.</u> Mouse usage may be difficult for people without fine motor control in their hands. Because we want users to be able to navigate by keyboard, we need to create a very clear and structured information hierarchy on each page</li>
+                <li><u>Do not rely on colour alone to code and distinguish. </u>People with visual impairments may not be able to use color alone to differentiate actions. Instead of having a tab change color when it is selected, we have opted to create buttons and shapes of significant size in addition to color to indicate selection.</li>
+                <li><u>Provide meaningful and relevant alternatives to non-text elements.</u> When creating certain elements of our prototype, we need to think critically about how visual information can become textual and textual information can become visual. </li>
+              </ul>
+
+              <p> Accessibility heuristics have been a critical way for us to make design decisions and we will continue to use these in coming weeks, especially when we have a coded prototype on which to text a screen reader for people with visual impairments.</p>
+
+
+
+              <li><h2>Continue asking users</h2></li>
+              <p> Of course, nothing beats hearing directly from users and observing their behavior. This week we focused on conducting usability tests with recruiting coordinators on designs for them to respond to and manage accommodation requests. Two of the design principles we learned from them that are helping us make decisions:</p>
+
+              <ul>
+                <li><u>Make it as easy for me as possible.</u> Since our client works at a large scale, coordinators need to be able to complete actions quickly and automate as much of their workload as possible</li>
+                <li><u>Create a frictionless candidate experience.</u> Our client cares deeply that candidates have a seamless, positive hiring experience. Thinking about how to take work and worry off of candidates is something that matters to Recruiting.</li><br/>
+              </ul>
+
+
+              <li><h2>Concentrate on the deliverable</h2></li>
+
+              <p>Finally, since we are very close to handing off our work to our client, our work has been influenced by what we want to share with our clients and what would be most helpful for them after we leave. For example, we decided that creating a really specific UI kit would be less helpful than having thought out justifications for key UI elements, since our client has their own very specific visual style and UI requirements.  </p>
+
+                    <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/see-saw.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">An example section of our happy path</p><br/>
+
+
+            </ol>
+
+
+
+
+      <br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Up<br/>Next</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 9</div>
+      <h2>If We Could Turn Back Time</h2>
+      <p>How often do you get the chance to do a project over again? Well, due to the nature of our Capstone, we find ourselves in a somewhat similar place to where we were at the end of Spring semester.</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="/SSUI-Homework-6/blog/week_9">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    
+    <!-- Footer -->
+    <div id="copyright">
+    <div class="row">
+      <div class="col-6">
+        <span id="university">Carnegie Mellon University</span><br/>
+        <span class="degree_program">Master of Human Computer Interaction</span>
+      </div>
+      <div class="col-6">
+        <p align="right"><span class="degree_program">&copy;</span>2018</p>
+      </div>
+    </div><!--end row-->
+
+  </div><!--end copyright-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+  </body>
+</html>

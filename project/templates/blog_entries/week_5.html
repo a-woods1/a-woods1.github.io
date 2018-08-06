@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Five</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Accelerating the Pace 
+           <div class="blog_week">WEEK 5</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+      <h2>Once you identify your target, all that’s left to do is move toward it.</h2>
+      <p>This week our team was able to do the following:</p>
+      <p><b>Identify the target → Take three steps forward → Take one step back</b><p>
+      <h2>Identify the target</h2>
+      <p>This week, we finalized the concept we will build out by the end of the summer! Our team was able to come to this decision thanks to much of our previous weeks’ work. We selected the need we want to address, and then prioritized specific features that will and won’t work for our key stakeholders. As a team, we then brought our HCI lens into play to determine which technologies would be a good fit for implementation. After some initial disagreement, we realized that getting very specific about use cases and implementation types created a path forward. For example, instead of saying we want immersive experiences, do we actually want an virtual desk for someone to sit at? Or do we want a 360 degree video of a space?</p>
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/concept-card.png') }}" alt="A card which outlines that our concept is a web app which will help candidates preview interview information and view accessible accommodations, as well as help our client ensure requests are process and input interview information"/>
+      <div class="photo_caption">The final concept card our team created to define what we will deliver to our client and people with disabilities</div><br/>
+      <h2>Three Steps Forward</h2>
+      <p>While the concept card was one way of defining what this tool would be for the team, creating prototype screen flows allowed us to visualize how different team members were imagining the concept.</p>
+
+      <div class="row">
+        <div class="col-6">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/variation-one.png') }}" alt="A rough black and white mockup of an interview summary page using a list format"/>
+        </div>
+
+        <div class="col-6">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/variation-two.png') }}" alt="A rough black and white mockup of an interview summary page using a card format"/>
+        </div>
+      </div>
+
+
+      <div class="photo_caption">Two different manifestations of our concept</div><br/>
+      <p>Testing key aspects of the designs with five different people with disabilities this week surfaced some great insights and themes to carry our designs forward.</p>
+      <ol>
+        <li>Content phrasing is cruicial (e.g. limitation vs accommodation vs disability). We will need to invest some time in UX Writing.</li>
+        <li>The more information, the better. Spatial/visual information is a popular feature, and some of our participants are already using tools like Google Street View to get information on unfamilar environments ahead of time.</li>
+        <li>Including room for customization is important, as every candidate (those with and without disabilities) will have unique needs.</li>
+      </ol>
+      <h2>One Step Back</h2>
+      <p>This week’s pace felt a bit sluggish, and it made us realize that this is due to shifting into a different phase of the project. Previously our work has focused heavily on research and decision making. Now that we are entering a rapid design, build, and learn iterative loop, we’re planning to shake up how we’re working by doing the following three things:</p>
+      <ol>
+        <li>Defining parallel work streams</li>
+        <li>Conducting more iterative, light usability testing</li>
+        <li>Building the things we know we'll need early on</li>
+      </ol>
+      <p>Part of this shift will also include experimenting with our meeting cadences and locations. Individual work time is easier said than done when you are sitting in a room with three teammates who may be discussing something else that you find interesting. We hope these changes will have us zooming closer to our target next week!</p><br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Up<br/>Next</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 6</div>
+      <h2>Racing Down Three Lanes</h2>
+      <p>Our team shifted to a rapid design, build, testing phase this week! Part of the change in our work has been to move into parallel lanes so we can move faster while checking in together.</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="{{ url_for('blog_week_6') }}">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    {% include "footer.html" %}
+  </body>
+</html>

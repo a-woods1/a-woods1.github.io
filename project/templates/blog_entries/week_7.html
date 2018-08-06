@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Team Blog - Week Seven</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+{% include "header.html" %}
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Divergence Before The Convergence 
+           <div class="blog_week">WEEK 7</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+    <!-- Header -->
+
+    <div class="blog_container">
+    <!-- Portfolio -->
+    <div class="blog_page">
+      <p>Assuming you’ve made it this far in our blog series, you are probably not a stranger to the double diamond:</p>
+
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/double-diamond.png') }}" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">Diagram credit to Marcelo Fagundes and Murilo Gomes of Insitum</p><br/>
+
+      <p>The double diamond is a process diagram that outlines the widening and narrowing of ideas, thoughts and work that occurs during the design process. As you may have guessed, we are more towards the end of this double diamond than the beginning. Our team is currently at the end of the <b>Develop</b> stage, meaning we are working on a variety of different iterations, with the goal of narrowing our focus to deliver something to our clients by the end of the next four weeks. Here are three key things that we’ve been developing:</p>
+
+      <h2>Developing designs for candidates with disabilities</h2>
+
+      <p>Can you spot the difference between the three designs below? This is one example of how we have created multiple variations within an in-room preview experience for candidates with disabilities, in order to test which one provides the most helpful information (spoiler alert, it’s a combination between one and two!)</p>
+
+       <div class="row">
+        <div class="col-md-4 col-sm-12">
+                <img class="blog_photo" src="{{ url_for('static', filename='assets/images/option-one.png') }}" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+                <img class="blog_photo" src="{{ url_for('static', filename='assets/images/option-two.png') }}" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+        </div>
+
+       <div class="col-md-4 col-sm-12">
+                <img class="blog_photo" src="{{ url_for('static', filename='assets/images/option-three.png') }}" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+        </div>
+      </div> <br/>
+
+      <p>By creating a variety of designs, we are now able to narrow and focus on the one that works best for users. We’ve also created multiple variations of the accommodations menu for candidates, including experimenting with using images versus text descriptions. One interesting finding for us has been that some people with disabilities find accommodation-related images patronizing. For example, showing an image of an accessible bathroom seems to imply to some people with disabilities that we don’t think that they know what an accessible bathroom looks like. Whether or not to include images  will be an interesting design decision for us, since we know that some candidates with cognitive impairments might prefer visual information over text.</p>
+
+      <h2>Developing client-centric user paths</h2>
+
+      <p>Can you spot the difference between the three designs below? This is one example of how we have created multiple variations within an in-room preview experience for candidates with disabilities, in order to test which one provides the most helpful information (spoiler alert, it’s a combination between one and two!)</p>
+      
+        <img class="blog_photo" src="{{ url_for('static', filename='assets/images/accom-diagram.png') }}" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+        <p class="photo_caption">An example of how multiple client stakeholders might work together on implementing a hiring process related accommodation </p><br/>
+
+        <p>While our primary focus is building out an experience for candidates with disabilities, we also want to think holistically about what is happening on our client’s side of the experience. If a candidate requests an accommodation, it means nothing if they don’t actually receive it. This week we diverged by thinking through key flows for three distinct user groups:
+
+        <ul>
+
+          <li>
+        Recruiters and recruiting coordinators: These roles communicate directly with candidates, and oversee implementation of any accommodations. 
+      </li>
+
+      <li>
+        Employee relations: This team helps determine what a reasonable accommodation would be in the workplace.
+      </li>
+
+      <li>
+        Hiring managers: These people decide what will be required as part of interviewing for positions on their teams.
+      </li>
+    </ul>
+
+        After a meeting with our client, we’ve decided to scope down and converge to just building out a design for recruiters and recruiting coordinators (while having back up logic to address the two other user groups). 
+        </p>
+
+
+       <h2> Developing key measurement criteria </h2>
+        <p>
+        Finally, we’ve been steadily building our measurement criteria for what makes a successful design in user testing:<br/><br/>
+
+        <i>Basic - Can the user accurately understand the information in the tool?</i>
+        We started by asking users comprehension questions to ensure they could understand interview information within our interface.<br/><br/>
+
+        <i>Good - Can the user accurately evaluate what accommodations might be needed based on this information?</i>
+        Once we knew our design was good enough for comprehension, we wanted to ensure that the information was helpful for making a decision about whether or not an accommodation would be needed.<br/><br/>
+
+        <i>Better - Can the user easily request an accommodation?</i>
+        If our designs were now able to provide the right information, could they help users take action and easily request an accommodation? <br/><br/>
+
+        <i>Best - Does the user feel confident requesting an accommodation?</i>
+        Finally, if our design could give users the right information and help them accomplish their goal, we wanted to ensure the design made users feel confident in their decision to share accommodation needs, as the ultimate goal of our project is to make people with disabilities more confident about their disclosure decision.<br/><br/>
+
+        We slowly tested more and more of these criteria during testing these last two weeks, and now in our upcoming sessions we will be able to just focus on confidence and measuring how our designs communicate trust. <br/><br/>
+
+        Onwards, to Deliver! </p>
+
+
+
+      <br/>
+    </div><!-- End blog_page -->
+  </div><!-- end blog_container -->
+  <div id="blog_footer" class="row">
+    <div class="col-3">
+      <h1 class="team_member">Up<br/>Next</h1>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <div class="blog_footer_week">Week 8</div>
+      <h2>Designing Decisions</h2>
+      <p>As we head into our final four weeks, and converge on delivering something for our client they are decisions galore to be made! Here are four ways our team is currently making decisions in this final stretch...</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class="all_posts" href="{{ url_for('blog_week_8') }}">Read More</a>
+    </div>
+  </div>
+  <div class="col-1"></div>
+    {% include "footer.html" %}
+  </body>
+</html>
