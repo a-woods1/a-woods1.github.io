@@ -9,11 +9,11 @@
                     <title>Team Blog - Week Two</title>
 
                     <!-- CSS -->
-                    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
-                        <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
-                            <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
-                                <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
-                                    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+                    <link rel="stylesheet" href="/a-woods1.github.io/static/css/normalize.min.css">
+                        <link rel="stylesheet" href="/a-woods1.github.io/static/css/animate.min.css">
+                            <link rel="stylesheet" href="/a-woods1.github.io/static/css/bootstrap.min.css">
+                                <link rel="stylesheet" href="/a-woods1.github.io/static/css/font-awesome.min.css">
+                                    <link rel="stylesheet" href="/a-woods1.github.io/static/css/index.css">
 
     </head>
 
@@ -23,7 +23,7 @@
         
     <div id="header" class="row">
       <div class="col-sm-6">
-        <a class="main_a" href="/SSUI-Homework-6/">
+        <a class="main_a" href="/a-woods1.github.io/">
           <span id="logo">
             TEAM B READY
           </span>
@@ -33,19 +33,19 @@
         <nav>
           <ul id="main_ul" class="menu">
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+              <a class="main_a" href="/a-woods1.github.io/">PROBLEM</a>
             </li>
             <li class="main_li">
-                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+                <a class="main_a" href="/a-woods1.github.io/solution/">SOLUTION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+              <a class="main_a" href="/a-woods1.github.io/process/">EVALUATION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+              <a class="main_a" href="/a-woods1.github.io/team/">TEAM</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+              <a class="main_a" href="/a-woods1.github.io/blog/">BLOG</a>
             </li>
         </ul>
       </nav>
@@ -67,15 +67,15 @@
         <div id="modal_row" class="row">
           <div id="modal_ul" class="col-12">
             <ul>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/">Problem</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/solution/">Solution</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/process/">Process</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/team/">Team</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/blog/">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -87,7 +87,7 @@
     <div class="row">
       <div class="col-1"></div>
 
-      <a class="all_posts" href="/SSUI-Homework-6/blog/">< BACK TO ALL POSTS</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/">< BACK TO ALL POSTS</a>
     </div>
 
         <div class="row">
@@ -115,7 +115,7 @@
                 </ol>
                 <p>This week was our chance to look back at all of the data--from the service blueprint, testing notes, and other external research--under the new lens of disclosure. From these sources, we synthesized over 40 data points and 20 breakdowns in the current disclosure experience.</p>
                 <p>One of the key breakdowns we identified relates to work performance. People with non-obvious disabilities may not disclose out of fear that if they do they will not get a job or promotion. However, sometimes this means that they do not get what they need to be successful. They end up not getting the job or promotion because of perceived performance issues.</p>
-                <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/futurevscurrent.png" alt="In the current state, there is no disclosure which leads to no accommodations. In a future state a person makes an informed disclosure decision which could result in either a needed accommodation or no unneeded accommodations"/>
+                <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/futurevscurrent.png" alt="In the current state, there is no disclosure which leads to no accommodations. In a future state a person makes an informed disclosure decision which could result in either a needed accommodation or no unneeded accommodations"/>
                 <div class="photo_caption">A simple model of the current and potential future state of this breakdown. We recognize that in reality the emotions involved are extremely complex.</div><br/>
                 <div>The key need we decided to address is the idea that people with non-obvious disabilities need to better understand the risk/benefits of disclosure. ​<b>How might we communicate the value of disclosure and/or minimize the risk?</b></div>
                 <h2>Moving forward</h2>
@@ -125,7 +125,7 @@
                   <li><b>External design inspiration.​</b> Two team members researched examples of design from analogous domains and presented them to the rest of the team. We also kept these examples up during later ideation sessions. These examples ranged from the ​<a class="team_links" href="https://gizmodo.com/is-the-dominos-pizza-tracker-telling-the-truth-1642997792">Domino's</a> pizza tracker​ (a great example of forecasting long-term value) to marketing examples of ​<a class="team_links" href="https://en.wikipedia.org/wiki/Anchoring">anchoring</a>.</li>
                   <li><b>Round robin technique.</b> Each person developed a design feature, and then passed it around to other team members who would add on comments/features, etc. This created a more “yes, and!” atmosphere.</li>
                 </ol>
-                <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/round-robin.jpg" alt="A piece of paper folded into thirds with one idea written and drawn on each third"/>
+                <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/round-robin.jpg" alt="A piece of paper folded into thirds with one idea written and drawn on each third"/>
                 <div class="photo_caption">An example from our Round Robin ideation. Can you guess the handwriting?</div>
                 <p>From about 40 potential features, we were able to narrow them down to five prototypes to build and test the following week. First, by clustering similar features together into concepts, and then by assessing each concept according to three metrics:</p>
                 <ol>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-1"></div>
             <div class="col-1">
-                <a class="all_posts" href="/SSUI-Homework-6/blog/week_3">Read More</a>
+                <a class="all_posts" href="/a-woods1.github.io/blog/week_3">Read More</a>
             </div>
         </div>
         <div class="col-1"></div>
@@ -168,14 +168,14 @@
   </div><!--end copyright-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/jquery-3.2.1.min.js"></script>
     <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/popper.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/wow.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/index.js"></script>
     </body>
 </html>

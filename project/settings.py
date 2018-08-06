@@ -2,7 +2,7 @@
 
 import os
 
-REPO_NAME = "SSUI-Homework-6"  # Used for FREEZER_BASE_URL
+REPO_NAME = "a-woods1.github.io"  # Used for FREEZER_BASE_URL
 DEBUG = True
 
 # Assumes the app is located in the same directory

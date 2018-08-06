@@ -9,11 +9,11 @@
   <title>Team Blog - Week Seven</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/animate.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/index.css">
 
 </head>
 
@@ -22,7 +22,7 @@
 
     <div id="header" class="row">
       <div class="col-sm-6">
-        <a class="main_a" href="/SSUI-Homework-6/">
+        <a class="main_a" href="/a-woods1.github.io/">
           <span id="logo">
             TEAM B READY
           </span>
@@ -32,19 +32,19 @@
         <nav>
           <ul id="main_ul" class="menu">
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+              <a class="main_a" href="/a-woods1.github.io/">PROBLEM</a>
             </li>
             <li class="main_li">
-                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+                <a class="main_a" href="/a-woods1.github.io/solution/">SOLUTION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+              <a class="main_a" href="/a-woods1.github.io/process/">EVALUATION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+              <a class="main_a" href="/a-woods1.github.io/team/">TEAM</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+              <a class="main_a" href="/a-woods1.github.io/blog/">BLOG</a>
             </li>
         </ul>
       </nav>
@@ -66,15 +66,15 @@
         <div id="modal_row" class="row">
           <div id="modal_ul" class="col-12">
             <ul>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/">Problem</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/solution/">Solution</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/process/">Process</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/team/">Team</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/blog/">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="row">
       <div class="col-1"></div>
 
-      <a class="all_posts" href="/SSUI-Homework-6/blog/">< BACK TO ALL POSTS</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/">< BACK TO ALL POSTS</a>
     </div>
 
         <div class="row">
@@ -108,7 +108,7 @@
     <div class="blog_page">
       <p>Assuming you’ve made it this far in our blog series, you are probably not a stranger to the double diamond:</p>
 
-      <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/double-diamond.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">Diagram credit to Marcelo Fagundes and Murilo Gomes of Insitum</p><br/>
+      <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/double-diamond.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/><p class="photo_caption">Diagram credit to Marcelo Fagundes and Murilo Gomes of Insitum</p><br/>
 
       <p>The double diamond is a process diagram that outlines the widening and narrowing of ideas, thoughts and work that occurs during the design process. As you may have guessed, we are more towards the end of this double diamond than the beginning. Our team is currently at the end of the <b>Develop</b> stage, meaning we are working on a variety of different iterations, with the goal of narrowing our focus to deliver something to our clients by the end of the next four weeks. Here are three key things that we’ve been developing:</p>
 
@@ -118,15 +118,15 @@
 
        <div class="row">
         <div class="col-md-4 col-sm-12">
-                <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/option-one.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+                <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/option-one.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
         </div>
 
         <div class="col-md-4 col-sm-12">
-                <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/option-two.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+                <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/option-two.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
         </div>
 
        <div class="col-md-4 col-sm-12">
-                <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/option-three.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+                <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/option-three.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
         </div>
       </div> <br/>
 
@@ -136,7 +136,7 @@
 
       <p>Can you spot the difference between the three designs below? This is one example of how we have created multiple variations within an in-room preview experience for candidates with disabilities, in order to test which one provides the most helpful information (spoiler alert, it’s a combination between one and two!)</p>
       
-        <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/accom-diagram.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
+        <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/accom-diagram.png" alt="The four stages of the double diamond process are discover, define, develop and deliver"/>
         <p class="photo_caption">An example of how multiple client stakeholders might work together on implementing a hiring process related accommodation </p><br/>
 
         <p>While our primary focus is building out an experience for candidates with disabilities, we also want to think holistically about what is happening on our client’s side of the experience. If a candidate requests an accommodation, it means nothing if they don’t actually receive it. This week we diverged by thinking through key flows for three distinct user groups:
@@ -197,7 +197,7 @@
     </div>
     <div class="col-1"></div>
     <div class="col-1">
-      <a class="all_posts" href="/SSUI-Homework-6/blog/week_8">Read More</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/week_8">Read More</a>
     </div>
   </div>
   <div class="col-1"></div>
@@ -217,14 +217,14 @@
   </div><!--end copyright-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/jquery-3.2.1.min.js"></script>
     <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/popper.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/wow.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/index.js"></script>
   </body>
 </html>

@@ -9,11 +9,11 @@
   <title>Team Blog - Week One</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/animate.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/normalize.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/animate.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/a-woods1.github.io/static/css/index.css">
 
 </head>
 
@@ -22,7 +22,7 @@
 
     <div id="header" class="row">
       <div class="col-sm-6">
-        <a class="main_a" href="/SSUI-Homework-6/">
+        <a class="main_a" href="/a-woods1.github.io/">
           <span id="logo">
             TEAM B READY
           </span>
@@ -32,19 +32,19 @@
         <nav>
           <ul id="main_ul" class="menu">
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/">PROBLEM</a>
+              <a class="main_a" href="/a-woods1.github.io/">PROBLEM</a>
             </li>
             <li class="main_li">
-                <a class="main_a" href="/SSUI-Homework-6/solution/">SOLUTION</a>
+                <a class="main_a" href="/a-woods1.github.io/solution/">SOLUTION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/process/">EVALUATION</a>
+              <a class="main_a" href="/a-woods1.github.io/process/">EVALUATION</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/team/">TEAM</a>
+              <a class="main_a" href="/a-woods1.github.io/team/">TEAM</a>
             </li>
             <li class="main_li">
-              <a class="main_a" href="/SSUI-Homework-6/blog/">BLOG</a>
+              <a class="main_a" href="/a-woods1.github.io/blog/">BLOG</a>
             </li>
         </ul>
       </nav>
@@ -66,15 +66,15 @@
         <div id="modal_row" class="row">
           <div id="modal_ul" class="col-12">
             <ul>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/">Problem</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/">Problem</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/solution/">Solution</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/solution/">Solution</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/process/">Process</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/process/">Process</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/team/">Team</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/team/">Team</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/blog/">Blog</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/a-woods1.github.io/blog/">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -84,7 +84,7 @@
     <div class="row">
       <div class="col-1"></div>
 
-      <a class="all_posts" href="/SSUI-Homework-6/blog/">< BACK TO ALL POSTS</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/">< BACK TO ALL POSTS</a>
     </div>
 
         <div class="row">
@@ -109,41 +109,41 @@
       <p>Our team has been doing our own version of “tapering” this week by using our time together to <b>refuel, reflect, and re-energize</b> for our marathon summer ahead.</p>
       <h2>Refuel: How can we quickly acclimate to a new culture?</h2>
       <p>This summer, we’re thrilled to be working onsite with our clients in their New York City office. This has involved new apartments, new work culture, and new work technology (including the intimidatingly efficient Terminal). Although we were already familiar with our client's work culture from our spring semester research, inhabiting the space on an ongoing basis has already felt different, and will ideally lead us to even more insights about how our client works.</p>
-      <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/JP-office.png" alt="A woman sits in an office with glass walls and the New York skyline behind her"/>
+      <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/JP-office.png" alt="A woman sits in an office with glass walls and the New York skyline behind her"/>
       <div class="photo_caption">Jinping in our new office space, which has a slightly better view than our room in Pittsburgh!</div><br/><br/>
       <h2>Reflect: How do we optimize our team dynamic?</h2>
       <p>To continue our marathon metaphor, the end of spring semester felt like falling across the finish line. By the last day, we were all drained. Our team spent a considerable amount of time this week discussing how to avoid this in the summer by creating strong, inclusive habits around work distribution, group input, and decision making.</p>
       <p>We made some cards to keep in our room that any team member can “play” at any time to ensure we are living these habits.</p>
       <div class="row">
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/ThreeQuestions.png" alt="A card with three question marks"/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/ThreeQuestions.png" alt="A card with three question marks"/>
           <p><b>Ask three questions</b></p>
           <p>When offering criticism, we will commit to asking at least three questions. This will not only help us better understand the thinking behind the criticism, but also allow us to be more generative.</p>
         </div>
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/QIETriangle.png" alt="A card with a triangle. The triangle has a Q, I and E at each vertice."/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/QIETriangle.png" alt="A card with a triangle. The triangle has a Q, I and E at each vertice."/>
           <p><b>The QIE triangle</b></p>
           <p>When making key decisions, surface the tension between Q (quality), I (inclusion) and E(efficiency). Using this card ensures we think about the current balance of all three elements.</p>
         </div>
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/WhiteBoard.png" alt="A card with three whiteboard markers"/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/WhiteBoard.png" alt="A card with three whiteboard markers"/>
           <p><b>Use the whiteboard</b></p>
           <p>When decision making discussions have become a verbal back and forth, use this card to get everyone to draw their ideas at the whiteboard so we can all visualize what we are thinking.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/DecisionTime.png" alt="A card with an alarm clock"/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/DecisionTime.png" alt="A card with an alarm clock"/>
           <p><b>Decision time</b></p>
           <p>When a discussion or meeting has gone on for too long without a decision being made, the person who uses this card must propose a way to reach a decision.</p>
         </div>
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/IGI.png" alt="A card with a group of individuals on it"/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/IGI.png" alt="A card with a group of individuals on it"/>
           <p><b>Individual - Group - Individual</b></p>
           <p>This card will facilitate better working sessions by going through an individual - group - individual process. This process gives individuals time to digest information before reaching a team agreement.</p>
         </div>
         <div class="col-4">
-          <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/DoItTogether.png" alt="A card with two characters drawing a diagram together"/>
+          <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/DoItTogether.png" alt="A card with two characters drawing a diagram together"/>
           <p><b>Make it together</b></p>
           <p>When two ideas/hypotheticals are in conflict, use this card to get both parties to create something with elements of both (in Sketch, on the whiteboard, in slides, etc.)</p>
         </div>
@@ -162,7 +162,7 @@
       </ul>
       <p>Among these questions, our team finds disrupting “whether to disclose” the most interesting, as it involves giving more power to the person with a disability. We want to help people with disabilities make a more informed decision during their own disclosure experience. Some current measures of success for us will be making people with disabilities feel supported, eliminating surprises, and removing uncertainty during the disclosure experience.</p>
       <p>From our spring research, we also know there are a variety of factors that contribute toward making a person more or less likely to disclose a disability. These may be useful when treated as design considerations or constraints. Our team represented these factors using this visual model:</p>
-      <img class="blog_photo" src="/SSUI-Homework-6/static/assets/images/dimensions-of-disclosure.png" alt="A diagram which lists the following disclosure factors: Personality, Necessity, Understanding of Needs, Directness of Results, Impression of Company, Impression of Interaction, Visibility of Disability and Self-Esteem"/>
+      <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/dimensions-of-disclosure.png" alt="A diagram which lists the following disclosure factors: Personality, Necessity, Understanding of Needs, Directness of Results, Impression of Company, Impression of Interaction, Visibility of Disability and Self-Esteem"/>
       <p>After considering the factors above, we realized several decisions are still needed to narrow our scope (e.g. should we focus on people with visible or invisible disabilities?). That being said, we can still start prototyping right away! In fact, we think our designs will be able to help us make some of these scoping decisions later on. Another commitment for us this semester will be more making and research by design.</p>
       <p>See you next week at the starting line!</p><br/>
     </div><!-- End blog_page -->
@@ -179,7 +179,7 @@
     </div>
     <div class="col-1"></div>
     <div class="col-1">
-      <a class="all_posts" href="/SSUI-Homework-6/blog/week_2">Read More</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/week_2">Read More</a>
     </div>
   </div>
   <div class="col-1"></div>
@@ -199,14 +199,14 @@
   </div><!--end copyright-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/jquery-3.2.1.min.js"></script>
     <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/popper.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/wow.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/a-woods1.github.io/static/js/index.js"></script>
   </body>
 </html>
