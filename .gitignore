@@ -1,0 +1,6 @@
+
+*.pyc
+project/templates/.DS_Store
+project/static/fonts/.DS_Store
+project/.DS_Store
+.DS_Store
