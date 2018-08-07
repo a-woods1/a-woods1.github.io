@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week Three</title>
+  <title>Team Blog - Week 3</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,31 +17,33 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-1">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
-
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 3</div>
+                <h1>Finding a New Need</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
 
-        <div class="row">
-                <div class="col-1"></div>
+    <!-- Header -->
 
-          <div id="heading" class="col-7">Finding A New Need 
-           <div class="blog_week">WEEK 3</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">June 8, 2018</div>
       <h2>What a difference a week makes!</h2>
       <p>Our team always learns so much from research, and this week was no exception. Through recruiting and interviewing users and conducting secondary research, we came to the end of our first summer sprint with a focused need to guide us through the rest of the project.</p>
       <h2>Secondary Research</h2>
@@ -70,20 +72,20 @@
       <p>Our need statement was initially focused around helping people with disabilities think through the benefits and risks of disclosure. However, through our interviews, it became clear that the fear and risk associated with disclosure stems from an inability to control how they disclose and how others will perceive them. The new need that overwhelmingly emerged was ​<b>I need to feel confident about how my disability is represented to stakeholders in the company during the hiring process.</b></p>
       <p>People with disabilities need and deserve to be in control of how others perceive them, which is something that can get lost in a hiring system. We’re excited to build something that will allow people with disabilities to tell their disability narrative in a way that suits them, as well as control who is seeing their disability-related information.</p>
       <p>None of this new information would have been available to us without talking to stakeholders. A highlight for our team this week was attending the A11yNYC Meetup to find others in the New York City Area who are interested in inclusive design and accessibility research. In addition to making some great contacts who will be able to give us feedback in the future, we learned a lot about the inaccessibility of the New York City transit system. Check out <a class="team_links" href="https://www.meetup.com/A11yNYC/events/250786260/">this page</a> for more information about the event, ​<i>Understanding Transportation Challenges for People With Disabilities in NYC</i>, and a link to the livestream.</p><br/>
+        <div class="col-sm-0 col-md-1 pad"></div>
+      </div>
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Up<br/>Next</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 4</div>
       <h2>Buy A Feature, Any Feature!</h2>
       <p>Our team is forging ahead to create a system that will help people with disabilities feel confident about how their disability is represented during the hiring process.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_4') }}">Read More</a>
     </div>
   </div>

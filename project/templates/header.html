@@ -1,9 +1,9 @@
 
     <div id="header" class="row">
       <div class="col-sm-6">
-        <a class="main_a" href="{{ url_for('home') }}">
+        <a href="{{ url_for('home') }}">
           <span id="logo">
-            TEAM B READY
+            <img src="{{ url_for('static', filename='assets/images/b-ready-dark.png') }}" />
           </span>
         </a>
       </div>
@@ -39,7 +39,7 @@
     <!-- menu modal -->
     <div id="animatedModal">
       <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-close"></i> </div>
         <div class="modal-content">
 
         <div id="modal_row" class="row">
@@ -49,7 +49,7 @@
               <li><hr class="modal_hr" /></li>
               <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('solution') }}">Solution</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('process') }}">Process</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('process') }}">Evaluation</a></li>
               <li><hr class="modal_hr" /></li>
               <li><a class="modal_a" onClick="closeModal();" href="{{ url_for('team') }}">Team</a></li>
               <li><hr class="modal_hr" /></li>

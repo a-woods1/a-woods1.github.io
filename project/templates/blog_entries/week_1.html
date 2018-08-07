@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week One</title>
+  <title>Team Blog - Week 1</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,41 +17,41 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-1">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
 
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 1</div>
+                <h1>Welcome to New York!</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
-
-        <div class="row">
-                <div class="col-1"></div>
-
-          <div id="heading" class="col-7">Welcome to New York! 
-           <div class="blog_week">WEEK 1</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
-
 
     <!-- Header -->
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
+
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">May 25, 2018</div>
       <h2>If you're going to run a marathon, make sure you take the last few weeks off.</h2>
       <p>It may sound counterintuitive, but the concept of “tapering” is a critical part of marathon training. Tapering is the idea of reducing your training in the last few weeks in order to make you stronger---both mentally and physically---for the big day.</p>
       <p>Our team has been doing our own version of “tapering” this week by using our time together to <b>refuel, reflect, and re-energize</b> for our marathon summer ahead.</p>
-      <h2>Refuel: How can we quickly acclimate to a new culture?</h2>
+      <h3>Refuel: How can we quickly acclimate to a new culture?</h3>
       <p>This summer, we’re thrilled to be working onsite with our clients in their New York City office. This has involved new apartments, new work culture, and new work technology (including the intimidatingly efficient Terminal). Although we were already familiar with our client's work culture from our spring semester research, inhabiting the space on an ongoing basis has already felt different, and will ideally lead us to even more insights about how our client works.</p>
       <img class="blog_photo" src="{{ url_for('static', filename='assets/images/JP-office.png') }}" alt="A woman sits in an office with glass walls and the New York skyline behind her"/>
-      <div class="photo_caption">Jinping in our new office space, which has a slightly better view than our room in Pittsburgh!</div><br/><br/>
-      <h2>Reflect: How do we optimize our team dynamic?</h2>
+      <div class="photo_caption">Jinping in our new office space, which has a slightly better view than our room in Pittsburgh!</div>
+      <h3>Reflect: How do we optimize our team dynamic?</h3>
       <p>To continue our marathon metaphor, the end of spring semester felt like falling across the finish line. By the last day, we were all drained. Our team spent a considerable amount of time this week discussing how to avoid this in the summer by creating strong, inclusive habits around work distribution, group input, and decision making.</p>
       <p>We made some cards to keep in our room that any team member can “play” at any time to ensure we are living these habits.</p>
       <div class="row">
@@ -105,20 +105,20 @@
       <img class="blog_photo" src="{{ url_for('static', filename='assets/images/dimensions-of-disclosure.png') }}" alt="A diagram which lists the following disclosure factors: Personality, Necessity, Understanding of Needs, Directness of Results, Impression of Company, Impression of Interaction, Visibility of Disability and Self-Esteem"/>
       <p>After considering the factors above, we realized several decisions are still needed to narrow our scope (e.g. should we focus on people with visible or invisible disabilities?). That being said, we can still start prototyping right away! In fact, we think our designs will be able to help us make some of these scoping decisions later on. Another commitment for us this semester will be more making and research by design.</p>
       <p>See you next week at the starting line!</p><br/>
+        <div class="col-sm-0 col-md-1 pad"></div>
+      </div>
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Up<br/>Next</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 2</div>
       <h2>Starting to Sprint</h2>
       <p>No one wants to get stuck in the past. However, in the words of G.K. Adams, sometimes it's necessary to find the right path ahead. This week, our team took Adams’ message to heart, as we worked toward a final design concept.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_2') }}">Read More</a>
     </div>
   </div>

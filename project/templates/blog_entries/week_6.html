@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week Six</title>
+  <title>Team Blog - Week 6</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,34 +17,33 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-6">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
-
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 6</div>
+                <h1>Racing Down Three Lanes</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
-
-        <div class="row">
-                <div class="col-1"></div>
-
-          <div id="heading" class="col-7">Racing Down Three Lanes 
-           <div class="blog_week">WEEK 6</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
-
 
     <!-- Header -->
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
+
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">Jun 29, 2018</div>
 
       <p>Our team shifted to a rapid design, build, testing phase this week! Part of the change in our work has been to move into parallel lanes so we can move faster while checking in together.</p>
 
@@ -104,22 +103,22 @@
       <p>In addition to a prototype of our <a class="team_links" href="http://afaucher.me/bb-immersive-preview/">immersive room experience</a> that is accessible via keyboard, we also created a cheat sheet for understanding VoiceOver, as screen reader accessibility will be a key component of our prototype for candidates with visual impairments.</p>
       </div>
       </div>
-
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/voice-over.png') }}" alt="A cheat sheet with the corresponding keyboard commands for Apple's Voice Over (e.g. the Control Key is used to stop reading)"/><br/><br/>
       <img class="blog_photo" src="{{ url_for('static', filename='assets/images/voice-over.png') }}" alt="A cheat sheet with the corresponding keyboard commands for Apple's Voice Over (e.g. for Stop Reading, the Control Key"/><br/><br/>
+        <div class="col-sm-0 col-md-1 pad"></div>
+      </div>
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Up<br/>Next</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 7</div>
       <h2>Divergence Before The Convergence</h2>
       <p>Assuming you’ve made it this far in our blog series, you are probably not a stranger to the double diamond...</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_7') }}">Read More</a>
     </div>
   </div>

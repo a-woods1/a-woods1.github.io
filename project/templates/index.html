@@ -75,7 +75,7 @@
     </section>
     <!-- pop out boxes -->
     <section id="statistics">
-      <h1 id="hidden"> KEY STATISTICS </h1>
+      <h1 id="hidden">KEY STATISTICS</h1>
       <div class='ui'>
         <div class="row" id="pop-out-section">
           <div class="col-lg-4 col-sm-12">
@@ -245,13 +245,16 @@
       </div>
     </section>
     <!-- quote -->
-    <section id="quote-1">
+    <section class="quote" id="quote-1">
       <div class="subhead-dark">
         <div class="row">
-          <h1 id="hidden"> THE EXPERIENCE FOR PEOPLE WITH DISABILITIES </h1>
-          <div class ="col-lg-12 col-sm12">
-            <div class="block animatable fadeInDown animationDelay" id="heading2">"No matter what your disability is there are some things that are hard to explain. It is difficult to explain what you are capable of and what exact accommodations you need. It has been hard to say what I would need."</div>
-          </div>
+          <!-- <h1 id="hidden"> THE EXPERIENCE FOR PEOPLE WITH DISABILITIES </h1> -->
+          <div class ="col-sm-12 col-lg-6">
+            <blockquote class="block animatable fadeInDown animationDelay" id="heading2">
+              <span>No matter what your disability is there are some things that are hard to explain.</span>
+              <span>It is difficult to explain what you are capable of and what exact accommodations you need.</span><span>It has been hard to say what I would need.</span>
+          </blockquote>
+          <span class="cite">Frank, Motor Impairment</span>          
         </div>
       </div>
     </section>
@@ -261,40 +264,24 @@
         <div class="col-12">
           <div class="subhead">
             <div class="row">
-              <div class="col-md-3 col-sm-12">
+              <div class="col-md-4 col-sm-12">
                 <h1> OUR GOAL </h1>
-                Our team set out to create something that would help people with disabilities feel more comfortable actually asking for what they need. We brainstormed a ton of concepts, and tested them with people with disabilites to understand what to pursue. 
+                <p><span class="lede">Our team set out to create something that would help people with disabilities feel more comfortable <b>asking for what they need</b>.</span>We brainstormed a ton of concepts, and tested them with people with disabilites to understand what to pursue.</p>
               </div>
-              <div class="col-md-3 col-sm-12">
-                <div class=form-note>
-                  <div class=textAria>
+              <div class="col-md-8 col-sm-12">
+                <div class="row">
                     <ul>
-                      <li><b>A mentoring platform</b><br/></li>
-                      <li><b>A virtual assistant</b><br/></li>
-                      <li><b>A transferrable profile</b><br/></li>
-                      <li><b>A disclosure calculator</b><br/></li>
-                      <li><b>An anonymous forum</b><br/></li>
-                      <li><b>A cooperative game</b><br/></li>
+                      <li>A mentoring platform</li>
+                      <li>A virtual assistant</li>
+                      <li>A transferrable profile</li>
+                      <li>A disclosure calculator</li>
+                      <li>An anonymous forum</li>
+                      <li>A cooperative game</li>
+                      <li>A VR storytelling experience</li>
+                      <li >A dashboard of disclosure information</li>
+                      <li>A company accessibility review site</li>
+                      <li contenteditable class="custom">Add Your Own Ideas here!</li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <div class=form-note>
-                  <div class=textAria>
-                    <ul>
-                      <li><b>A VR storytelling experience</b><br/></li>
-                      <li><b>A dashboard of disclosure information</b><br/></li>
-                      <li><b>A company accessibility review site</b><br/></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <div class=form-note>
-                  <div contenteditable class=textAria>
-                    <br/><b>Add Your Own Ideas here!</b><br/>
-                  </div>
                 </div>
               </div>
             </div>
@@ -306,162 +293,207 @@
     <section id="calculator">
       <div id="sub-section">
         <div class ="row">
-          <div class="col-lg-12">
-            After testing out these initial designs, we realized that there are a variety of factors that go into the disclosure decision for people with disabilities. Imagine trying to balance the following factors to make your own disclosure decision:<br/>    <br/>      
+          <div class="col-lg-5 col-sm-12 flyout">
+            <h1>FINDINGS</h1>
+            <p><span class="lede">There are a variety of factors that influence the disclosure decision for people with disabilities.</span>After testing out these initial designs, we realized that there are a variety of factors that go into the disclosure decision for people with disabilities. Imagine trying to balance the following factors to make your own disclosure decision:
+            </p>
           </div>
         </div>
-        <div class="row">
-          <div class ="col-md-2 col-sm-12"> </div>
-          <div class ="col-md-2 col-sm-2" id="left-text"> I do not trust this company<br/><br/> </div>
-          <div class ="col-md-4 col-sm-8">
-            <div class="slider">
+        <div class="row slider-component">
+          <div class="col-sm-12 col-md-2"><h3>TRUST</h3></div>
+          <div class ="col-sm-12 col-md-7">
+            <div class ="left-item" class="left-text"> I do not trust this company</div>
+            <div class ="right-item"> I trust this company a lot</div>
+            <div class="slider" id="slider1">
               <input id= "range1" type = "range" min="0" max="100" onchange="rangevalue.value=value"/>
-            </div>
+            </div>         
           </div>
-          <div class ="col-md-2 col-sm-2"> I trust this company a lot</div>
+          <div class ="col-sm-0 col-md-1"></div>
+          <div class ="col-sm-12 col-md-2">
+            <output class="disclose" id="rangevalue">Unsure</output>
+          </div>
         </div>
-        <div class="row">
-          <div class ="col-md-2 col-sm-12"> </div>
-          <div class ="col-md-2 col-sm-2" id="left-text"> I do not identify as a person with a disability <br/><br/> </div>
-          <div class ="col-md-4 col-sm-8">
-            <div class="slider2">
+
+        <div class="row slider-component">
+          <div class="col-sm-12 col-md-2"><h3>IDENTITY</h3></div>
+          <div class ="col-sm-12 col-md-7">
+            <div class ="left-item" class="left-text">I do not identify as a person with a disability</div>
+            <div class ="right-item">I strongly identify as a person with a disability</div>
+            <div class="slider" id="slider2">
               <input id= "range2" type = "range" min="0" max="100" onchange="rangevalue2.value=value"/>
-            </div>
+            </div>         
           </div>
-          <div class ="col-md-2 col-sm-2"> I strongly identify as a person with a disability</div>
+          <div class ="col-sm-0 col-md-1"></div>
+          <div class ="col-sm-12 col-md-2">
+            <output class="disclose" id="rangevalue2">Unsure</output>
+          </div>
         </div>
-        <div class="row">
-          <div class ="col-md-2 col-sm-12"> </div>
-          <div class ="col-md-2 col-sm-2" id="left-text"> My disability is recent <br/><br/></div>
-          <div class ="col-md-4 col-sm-8">
-            <div class="slider3">
+
+        <div class="row slider-component">
+          <div class="col-sm-12 col-md-2"><h3>HISTORY</h3></div>
+          <div class ="col-sm-12 col-md-7">
+            <div class ="left-item" class="left-text">My disability is recent</div>
+            <div class ="right-item">I strongly identify as a person with a disability</div>
+            <div class="slider" id="slider3">
               <input id= "range3" type = "range" min="0" max="100" onchange="rangevalue3.value=value"/>
-            </div>
+            </div>         
           </div>
-          <div class ="col-md-2 col-sm-2"> I have had my disability for a long time</div>
+          <div class ="col-sm-0 col-md-1"></div>
+          <div class ="col-sm-12 col-md-2">
+            <output class="disclose" id="rangevalue3">Unsure</output>
+          </div>
         </div>
-        <div class="row">
-          <div class ="col-md-2 col-sm-12"> </div>
-          <div class ="col-md-2 col-sm-2" id="left-text"> My disability is not visible in this situation<br/><br/> </div>
-          <div class ="col-md-4 col-sm-8">
-            <div class="slider4">
+
+         <div class="row slider-component">
+          <div class="col-sm-12 col-md-2"><h3>VISIBILITY</h3></div>
+          <div class ="col-sm-12 col-md-7">
+            <div class ="left-item" class="left-text">My disability is not visible in this situation</div>
+            <div class ="right-item">My disability will be very visible in this situation</div>
+            <div class="slider" id="slider4">
               <input id= "range4" type = "range" min="0" max="100" onchange="rangevalue4.value=value"/>
             </div>
           </div>
-          <div class ="col-md-2 col-sm-2"> My disability will be very visible in this situation</div>
-        </div>
-        <div class="row">
-          <div class ="col-md-2 col-sm-12"> </div>
-          <div class ="col-md-2 col-sm-2" id="left-text"> I will not need to do anything that involves my disability<br/><br/> </div>
-          <div class ="col-md-4 col-sm-8">
-            <div class="slider5">
-              <input id= "range5" type = "range" min="0" max="100" onchange="rangevalue5.value=value"/> 
-            </div>
+          <div class ="col-sm-0 col-md-1"></div>
+          <div class ="col-sm-12 col-md-2">
+            <output class="disclose" id="rangevalue4">Unsure</output>
           </div>
-          <div class ="col-md-2 col-sm-2"> I will need to do something that is affected by my disability</div>
         </div>
-        <div class="row" id="answer-text">
-          <div class ="col-md-1 col-sm-12"></div>
-          <div class ="col-md-2 col-sm-12"> <output id="rangevalue">Trust - Undecided</output> </div>
-          <div class ="col-md-2 col-sm-12"> <output id="rangevalue2">Identity - Undecided</output> </div>
-          <div class ="col-md-2 col-sm-12"> <output id="rangevalue3"> Age of disability-Undecided</output> </div>
-          <div class ="col-md-2 col-sm-12"> <output id="rangevalue4"> Visibility of disability-Undecided</output></div>
-          <div class ="col-md-2 col-sm-12"> <output id="rangevalue5">Necessity-Undecided</output></div>
-          <div class ="col-md-1 col-sm-12"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 col-sm-12" id ="problem-text">
-            <span>Wouldn't you be confused about what to do when balancing all of these options? There is a huge amount of <b>uncertainty.</b></span>
+
+        <div class="row slider-component">
+          <div class="col-sm-12 col-md-2"><h3>NECESSITY</h3></div>
+          <div class ="col-sm-12 col-md-7">
+            <div class ="left-item" class="left-text">I will not need to do anything that involves my disability</div>
+            <div class ="right-item">I will need to do something that is affected by my disability</div>
+            <div class="slider" id="slider5">
+              <input id= "range5" type = "range" min="0" max="100" onchange="rangevalue5.value=value"/>
+            </div>         
+          </div>
+          <div class ="col-sm-0 col-md-1"></div>
+          <div class ="col-sm-12 col-md-2">
+            <output class="disclose" id="rangevalue5">Unsure</output>
+          </div>
+        </div> 
+        <div class="row balancing">
+          <div class="col-sm-12 col-md-5">
+            <p>
+            <span>Wouldn't you be confused about what to do when balancing all of these options? <span class="lede">There is a huge amount of <b>uncertainty</b>.</span>
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- model -->
     <section id="model">
       <div class="row">
         <div class="col-12">
           <div class="subhead">
-            <div class="row" id="problem-text">
-              <div class="col-lg-12 col-sm-12">
-                Our team decided to focus on creating a resource that could help reduce uncertainty for candidates in this situation. We wanted to create something that could successfully provide information about what a person would need to be able to do during the interview process. In order to make something usable, we focused on a model that one of our research participants shared, for making the disclosure decision: 
+            <h1>Principles</h1>
+            <div class="row">
+              <span class="col-sm-12 col-lg-4 lede">
+                Our team decided to focus on creating a resource that could help reduce uncertainty for candidates in this situation.
+              </span>
+              <p class="col-sm-12 col-lg-4">We wanted to create something that could successfully provide information about what a person would need to be able to do during the interview process. In order to make something usable, we focused on a model that one of our research participants shared, for making the disclosure decision: 
+              </p>
+              </div>              
+              
+        <div class='ui'>
+          <div class="row">
+            <div class="col-lg-3 col-sm-3">
+              <div class='ui_box animatable fadeInDown animationDelay'>
+                  <span class="corner"></span>
+                  <span>Understand</span>
+                  What is expected of me?
               </div>
-              <div class='ui'>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
-                    <div class='ui_box_2'>
-                      <div class='ui_box__inner2'>
-                        <span> Understand </span><br/>
-                        What is expected of me?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-1 col-sm-1" id="icon-text">
-                    <img class="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
-                  </div>
-                  <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
-                    <div class='ui_box_2'>
-                      <div class='ui_box__inner2'>
-                        <span> Evaluate</span><br/>
-                        For what might I need an accommodation?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-1 col-sm-1" id="icon-text">
-                    <img class="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
-                  </div>
-                  <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
-                    <div class='ui_box_2'>
-                      <div class='ui_box__inner2'>
-                        <span> Act</span><br/>
-                        How can I easily ask for an accommodation?
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+              <img class="tri-icons" src="{{ url_for('static', filename='assets/images/arrows-yellow.png') }}" role="presentation"/>
+            </div>
+            <div class="col-lg-3 col-sm-3">
+              <div class='ui_box animatable fadeInDown animationDelayMed'>
+                  <span class="corner"></span>
+                  <span>Evaluate</span>
+                  For what might I need an accommodation?
               </div>
-              But how could our client handle these requests once they came in? Based on our prior research on how the hiring process works for people with disabilities we also discovered that <span>recruiters and recruiting coordinators also felt undue uncertainty about how they could do a better job of growing their accessibility expertise.</span>
+            </div>
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+              <img class="tri-icons" src="{{ url_for('static', filename='assets/images/arrows-yellow.png') }}" role="presentation"/>
+            </div>
+            <div class="col-lg-3 col-sm-3">
+              <div class='ui_box animatable fadeInDown animationDelayLong'>
+                  <span class="corner"></span>
+                  <span>Act</span>
+                  How can I easily ask for an accommodation?
+              </div>
             </div>
           </div>
         </div>
+        </div>
+        </div>
       </div>
     </section>
-    <section id="quote-2">
+
+    <!-- quote -->
+    <section class="quote" id="quote-2">
       <div class="subhead-dark">
         <div class="row">
-          <div class="row">
-            <div class ="col-md-12 col-sm12">
-              <div class="block animatable fadeInDown" id="heading2">"We had to accommodate a person with a hearing impairment and it threw us into a panic. We started thinking - do we have these things? We just didn't know where to start."</div>
-            </div>
-          </div>
+          <!-- <h1 id="hidden"> THE EXPERIENCE FOR PEOPLE WITH DISABILITIES </h1> -->
+
+        <p class="col-sm-12 col-lg-4">
+          <span class="lede">
+          But how could our client handle these requests once they came in?
+          </span>Based on our prior research on how the hiring process works for people with disabilities we also discovered that recruiters and recruiting coordinators also <b>felt undue uncertainty</b> about how they could do a better job of growing their accessibility expertise.   
+          </p>
+          <div class="col-sm-0 col-lg-2"></div>         
+          <div class ="col-sm-12 col-lg-6">
+            <blockquote class="block animatable fadeInDown animationDelay" id="heading2">
+              <span>We had to accommodate a person with a hearing impairment and it threw us into a panic. We started thinking - do we have these things?</span>
+              <span>We just didn't know where to start.</span>
+          </blockquote>
+          <span class="cite">Rosa, Recruiting</span>          
         </div>
       </div>
     </section>
+
+    <!-- Opportunity -->
     <section id="opportunity">
       <div class="subhead">
         <div class="row">
           <div class="col-12">
-            <h1> OPPORTUNITY </h1>
+            <h1>OPPORTUNITY</h1>
             <div class="row">
-              <div class="col-lg-12 col-sm-12">
-                We saw a great opportunity to reduce uncertainty for both candidates and recruiting coordinators, by giving both sides the ability to understand, evaluate and act. 
-                By creating a system that allows more candidates with disabilities to make informed and confident disclosure decisions and that gives coordinators the ability to make sure these accommodations are in place, our client is positioned to grow the diversity of its workforce.<br/><br/>
+              <span class="col-sm-12 col-lg-4 lede">
+                We saw a great opportunity to <b>reduce uncertainty</b> for both candidates and recruiting coordinators, by giving both sides the ability to understand, evaluate and act.
+              </span>
+              <p class="col-sm-12 col-lg-4">
+                By creating a system that allows more candidates with disabilities to make informed and confident disclosure decisions and that gives coordinators the ability to make sure these accommodations are in place, our client is positioned to grow the diversity of its workforce.
+              </p>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/talent-icon.png') }}" role="presentation"/><br/>
-                Talent <br/><br/> More candidates, both with and without disabilities, can be attracted
+                <div class="item">
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/talent-icon.png') }}" role="presentation"/><span>
+                Talent</span><p>More candidates, both with and without disabilities, can be attracted</p>
+                </div>
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/innovation-icon.png') }}" role="presentation"/><br/>
-                Innovation <br/><br/> A more diverse workforce leads to an even more innovative company
+                <div class="item">                
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/innovation-icon.png') }}" role="presentation"/><span>
+                Innovation</span><p>A more diverse workforce leads to an even more innovative company</p>
+              </div>
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/brand-icon.png') }}" role="presentation"/><br/>
-                Brand <br/><br/> Continue to grow a reputation as an inclusive place to work and interview
+                <div class="item">                
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/brand-icon.png') }}" role="presentation"/><span>
+                Brand</span><p>Continue to grow a reputation as an inclusive place to work and interview</p>
+                </div>
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/partnership-icon.png') }}" role="presentation"/><br/>
-                Partnerships <br/><br/> Learnings from this tool can be used to enhance relationships with clients and partners with disabilities
+                <div class="item">
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/partnership-icon.png') }}" role="presentation"/><span>
+                Partnerships</span><p>Learnings from this tool can be used to enhance relationships with clients and partners with disabilities</p>
+                </div>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week Four</title>
+  <title>Team Blog - Week 4</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,67 +17,69 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-1">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
-
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 4</div>
+                <h1>Buy A Feature, Any Feature!</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
 
-        <div class="row">
-                <div class="col-1"></div>
+    <!-- Header -->
 
-          <div id="heading" class="col-7">Buy A Feature, Any Feature! 
-           <div class="blog_week">WEEK 4</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
-      <div class="blog_quote"><i>I have not failed. I've just found 10,000 ways that won't work. -- Thomas Edison</i></div><br/>
-      <p>As mentioned in our last post, our team is forging ahead to create a system that will help people with disabilities feel confident about how their disability is represented during the hiring process.</p>
-      <p>Sounds like a great goal, right? Well now we need to find a way to get there. For us, this means evaluating key features for our final prototype. And in the spirit of Thomas Edison’s quote, we need to eliminate the features that won’t work.</p>
-      <h2>This won’t work for our clients</h2>
-      <p>Our clients are key partners in helping us define which features to implement. In addition to their own ideas and inspirations, they also bring legitimate legal and policy constraints to the conversation. In order to get a clear idea of which features would never make it off the ground, we held two co-design sessions with our clients. The goals of these sessions were:</p>
-      <ol>
-        <li>Prioritize the do’s and don’ts that we have been discussing throughout the project</li>
-        <li>Create and critique concepts together</li>
-      </ol>
-      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/client-sketch.jpg') }}" alt="A pen and paper sketch of the process of requesting an accommodation"/>
-      <div class="photo_caption">A co-design concept from our client session</div><br/>
-      <p>Besides giving us a sense of how our clients conceptualize the problem space, these session helped us eliminate potential features based on client feedback. Now only 9,990 more ways to go!</p>
-      <h2>This won’t work for people with disabilities</h2>
-      <p>In the spirit of acquiring the information we needed with a leaner research methodology (our testing and transcription was taking a lot of time), our team also decided to switch up our research method. Since this week was all about determining what our users do and don’t care about, we decided to use the “Buy A Feature” method.</p>
-      <p>Buy A Feature is a research method in which participants are given a fixed amount of money, which they can use to invest in different items, or features. In our variation of Buy A Feature, we allowed participants to decide the dollar amount (in multiples of $100) they wanted to spend on each feature to indicate degree of preference.</p>
-      <p>While Buy A Feature is typically conducted in person, we had some participants we really wanted to include who are not based in the NYC area. For testing remote participants, we adapted the method to a virtual format using Google Slides.</p>
-      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/buy-a-feature.png') }}" alt="Thirteen squares with different features listed. $100 has been placed on four of these features."/>
-      <div class="photo_caption">An example of how we adapted Buy A Feature for remote testing</div><br/>
-      <p>Not only did participants find this to be a fun exercise (we did give them 1,000 fake dollars after all) but this method also gave us a really clear way of identifying the features that nobody was buying.</p>
-      <h2>This won’t work for HCI</h2>
-      <p>A final factor our team considered this week: Is this feature something that human-computer interaction practitioners are best suited to work on? This requires some of what our team has been calling “designer’s intuition”. In fact, some of our features could be implemented really well by a marketing team, or a human resources team. What are some needs that technology could uniquely solve?</p>
-      <p>By eliminating the things that don’t work for our key stakeholders, we’re left with some really compelling features that both users and clients want. This final HCI lens, which we will be discussing more as a team tomorrow, will provide a final constraint in identifying the core things we want to build out. Of course, Edison would probably remind us that once we have that core functionality, we can start the trial and error process all over again.</p><br/>
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">Jun 14, 2018</div>
+        <div class="blog_quote"><i>I have not failed. I've just found 10,000 ways that won't work. -- Thomas Edison</i></div><br/>
+        <p>As mentioned in our last post, our team is forging ahead to create a system that will help people with disabilities feel confident about how their disability is represented during the hiring process.</p>
+        <p>Sounds like a great goal, right? Well now we need to find a way to get there. For us, this means evaluating key features for our final prototype. And in the spirit of Thomas Edison’s quote, we need to eliminate the features that won’t work.</p>
+        <h2>This won’t work for our clients</h2>
+        <p>Our clients are key partners in helping us define which features to implement. In addition to their own ideas and inspirations, they also bring legitimate legal and policy constraints to the conversation. In order to get a clear idea of which features would never make it off the ground, we held two co-design sessions with our clients. The goals of these sessions were:</p>
+        <ol>
+          <li>Prioritize the do’s and don’ts that we have been discussing throughout the project</li>
+          <li>Create and critique concepts together</li>
+        </ol>
+        <img class="blog_photo" src="{{ url_for('static', filename='assets/images/client-sketch.jpg') }}" alt="A pen and paper sketch of the process of requesting an accommodation"/>
+        <div class="photo_caption">A co-design concept from our client session</div><br/>
+        <p>Besides giving us a sense of how our clients conceptualize the problem space, these session helped us eliminate potential features based on client feedback. Now only 9,990 more ways to go!</p>
+        <h2>This won’t work for people with disabilities</h2>
+        <p>In the spirit of acquiring the information we needed with a leaner research methodology (our testing and transcription was taking a lot of time), our team also decided to switch up our research method. Since this week was all about determining what our users do and don’t care about, we decided to use the “Buy A Feature” method.</p>
+        <p>Buy A Feature is a research method in which participants are given a fixed amount of money, which they can use to invest in different items, or features. In our variation of Buy A Feature, we allowed participants to decide the dollar amount (in multiples of $100) they wanted to spend on each feature to indicate degree of preference.</p>
+        <p>While Buy A Feature is typically conducted in person, we had some participants we really wanted to include who are not based in the NYC area. For testing remote participants, we adapted the method to a virtual format using Google Slides.</p>
+        <img class="blog_photo" src="{{ url_for('static', filename='assets/images/buy-a-feature.png') }}" alt="Thirteen squares with different features listed. $100 has been placed on four of these features."/>
+        <div class="photo_caption">An example of how we adapted Buy A Feature for remote testing</div><br/>
+        <p>Not only did participants find this to be a fun exercise (we did give them 1,000 fake dollars after all) but this method also gave us a really clear way of identifying the features that nobody was buying.</p>
+        <h2>This won’t work for HCI</h2>
+        <p>A final factor our team considered this week: Is this feature something that human-computer interaction practitioners are best suited to work on? This requires some of what our team has been calling “designer’s intuition”. In fact, some of our features could be implemented really well by a marketing team, or a human resources team. What are some needs that technology could uniquely solve?</p>
+        <p>By eliminating the things that don’t work for our key stakeholders, we’re left with some really compelling features that both users and clients want. This final HCI lens, which we will be discussing more as a team tomorrow, will provide a final constraint in identifying the core things we want to build out. Of course, Edison would probably remind us that once we have that core functionality, we can start the trial and error process all over again.</p><br/>        
+      </div>
+      <div class="col-sm-0 col-md-1 pad"></div>      
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Up<br/>Next</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 5</div>
       <h2>Accelerating the Pace</h2>
       <p>Once you identify your target, all that’s left to do is move toward it.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_5') }}">Read More</a>
     </div>
   </div>

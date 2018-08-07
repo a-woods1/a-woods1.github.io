@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week Ten</title>
+  <title>Team Blog - Week 10</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,35 +17,33 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-10">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
-
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 10</div>
+                <h1>How Do You Say Goodbye?</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
-
-        <div class="row">
-                <div class="col-1"></div>
-
-          <div id="heading" class="col-7">How Do You Say Goodbye? 
-           <div class="blog_week">WEEK 10</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
-
-
 
     <!-- Header -->
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
+
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">Jul 27, 2018</div>
       <p>It’s hard to believe but we are in the last week of work with our client. This project has taught us so many lessons, it’s hard to capture all of them. But we think the best way to say goodbye to a project is to reflect on everything you’ve learned, so we’re going to try anyway! Here is our top ten list of things we’ve learned from this project:</p>
 
       <ol>
@@ -58,27 +56,23 @@
         <li><b>Disagree and commit:</b> There will always be differences of opinion when it comes to a decision -- you can never make everyone happy. Our project involved so much decision making amongst the team. The moment we hit our stride was when we learned to put this principle into place.</li><br/>
         <li><b>Figure out how to leverage each other’s strengths:</b> A well performing team should ideally be greater than the sum of its individual parts. We were able to achieve this by being explicit about strengths, learning goals and carving out the right time and space for people to do their best work.</li><br/>
         <li><b>Treat everything as a learning opportunity:</b> At the end of the day, this project is an academic exercise. It exists for the purpose of learning. The weeks where we tried a new research method, or design brainstorming technique, or took a risk in our process or product will be the weeks that have taught us the most.</li><br/>
-        <li><b>Projects like this stick with you.</b> Every single one of our team members views digital and physical experiences differently now. When we watch a video, we notice if there are no captions available. When we go to a restaurant we notice if there are steps at the entrance. A project like this can change how you experience the world. In reality, we won’t have to say goodbye to this project. The lessons we’ve learned will stick with us for a lifetime. </li> <br/>         
-
+        <li><b>Projects like this stick with you.</b> Every single one of our team members views digital and physical experiences differently now. When we watch a video, we notice if there are no captions available. When we go to a restaurant we notice if there are steps at the entrance. A project like this can change how you experience the world. In reality, we won’t have to say goodbye to this project. The lessons we’ve learned will stick with us for a lifetime. </li> <br/>
           </ol><br/>
-
-
-
-      <br/>
+      <br/>      
+        <div class="col-sm-0 col-md-1 pad"></div>
+      </div>
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Go<br/>Back</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 1</div>
       <h2>Welcome to New York!</h2>
-      <p>If you're going to run a marathon, make sure you take the last few weeks off. It may sound counterintuitive, but the concept of “tapering” is a critical part of marathon training. </p>
+      <p>If you're going to run a marathon, make sure you take the last few weeks off. It may sound counterintuitive, but the concept of “tapering” is a critical part of marathon training.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_1') }}">Read More</a>
     </div>
   </div>

@@ -53,68 +53,75 @@ jQuery(function($) {
 
 
 
-  $('.slider').on('change', function(){
+  $('#slider1').on('change', function(){
     var valueOn = $("#range1" ).val();    
     if (valueOn >= 50){
-    $('#rangevalue').text("Trust - Disclose");
-    $('#rangevalue').css("color", "green");
+    $('#rangevalue').text("Disclose");
+    $('#rangevalue').removeClass("disclose-false");    
+    $('#rangevalue').addClass("disclose-true");
       } else {
-        $('#rangevalue').text("Trust - Don't Disclose")
-        $('#rangevalue').css("color", "red");
+      $('#rangevalue').text("Don't Disclose");
+      $('#rangevalue').removeClass("disclose-true");    
+      $('#rangevalue').addClass("disclose-false");
     }
   });
 
 
-  $('.slider2').on('change', function(){
+  $('#slider2').on('change', function(){
     var valueOn2 = $("#range2" ).val(); 
     console.log(valueOn2);   
     if (valueOn2 >= 50){
           console.log("Hey");
-    $('#rangevalue2').text("Identity - Disclose");
-    $('#rangevalue2').css("color", "green");
+    $('#rangevalue2').text("Disclose");
+    $('#rangevalue2').removeClass("disclose-false");    
+    $('#rangevalue2').addClass("disclose-true");
       } else {
-        $('#rangevalue2').text("Identity - Don't Disclose")
-        $('#rangevalue2').css("color", "red");
-
+      $('#rangevalue2').text("Don't Disclose");
+      $('#rangevalue2').removeClass("disclose-true");    
+      $('#rangevalue2').addClass("disclose-false");
     }
   });
 
 
-  $('.slider3').on('change', function(){
+  $('#slider3').on('change', function(){
     var valueOn3 = $("#range3" ).val(); 
     console.log(valueOn3);   
     if (valueOn3 >= 50){
-    $('#rangevalue3').text("Age of disability - Disclose");
-    $('#rangevalue3').css("color", "green");
+    $('#rangevalue3').text("Disclose");
+    $('#rangevalue3').removeClass("disclose-false");    
+    $('#rangevalue3').addClass("disclose-true");
       } else {
-        $('#rangevalue3').text("Age of disability - Don't Disclose")
-        $('#rangevalue3').css("color", "red");
+      $('#rangevalue3').text("Don't Disclose");
+      $('#rangevalue3').removeClass("disclose-true");    
+      $('#rangevalue3').addClass("disclose-false");
     }
   });
 
-  $('.slider4').on('change', function(){
+  $('#slider4').on('change', function(){
     var valueOn4 = $("#range4" ).val(); 
     console.log(valueOn4);   
     if (valueOn4 >= 50){
-    $('#rangevalue4').text("Visibility of disability - Disclose");
-    $('#rangevalue4').css("color", "green");
-
+    $('#rangevalue4').text("Disclose");
+    $('#rangevalue4').removeClass("disclose-false");    
+    $('#rangevalue4').addClass("disclose-true");      
       } else {
-        $('#rangevalue4').text("Visibility of disability - Don't Disclose")
-        $('#rangevalue4').css("color", "red");
-
+      $('#rangevalue4').text("Don't Disclose");
+      $('#rangevalue4').removeClass("disclose-true");    
+      $('#rangevalue4').addClass("disclose-false");        
     }
   });
 
-  $('.slider5').on('change', function(){
+  $('#slider5').on('change', function(){
     var valueOn5 = $("#range5" ).val(); 
     console.log(valueOn5);   
     if (valueOn5 >= 50){
-    $('#rangevalue5').text("Necessity - Disclose");
-    $('#rangevalue5').css("color", "green");
+    $('#rangevalue5').text("Disclose");
+    $('#rangevalue5').removeClass("disclose-false");    
+    $('#rangevalue5').addClass("disclose-true");
       } else {
-        $('#rangevalue5').text("Necessity - Don't Disclose");
-        $('#rangevalue5').css("color", "red");
+      $('#rangevalue5').text("Don't Disclose");
+      $('#rangevalue5').removeClass("disclose-true");    
+      $('#rangevalue5').addClass("disclose-false");         
     }
   });
 
