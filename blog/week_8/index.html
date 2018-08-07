@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week 9</title>
+  <title>Team Blog - Week 8</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/a-woods1.github.io/static/css/normalize.min.css">
@@ -17,7 +17,7 @@
 
 </head>
 
-  <body class="blog_entry" id="blog-9">
+  <body class="blog_entry" id="blog-1">
     <!--<div id="for_testing"></div>-->
 
     <div id="header" class="row">
@@ -87,8 +87,8 @@
              <div class="col-sm-1"></div>
              <div class="col-sm-10">
                 <a class="all_posts" href="/a-woods1.github.io/blog/">BACK TO ALL POSTS</a>
-                <div class="blog_week">WEEK 9</div>
-                <h1>If We Could Turn Back Time</h1>
+                <div class="blog_week">WEEK 8</div>
+                <h1>Designing Decisions</h1>
              </div>
              <div class="col-sm-1"></div>
           </div>
@@ -103,39 +103,51 @@
 
     <!-- Content -->
     <div class="blog_content col-sm-10 col-md-10">
-      <div class="publish_date">Jul 20, 2018</div>
-      <p>
-      How often do you get the chance to do a project over again? Well, due to the nature of our Capstone, we find ourselves in a somewhat similar place to where we were at the end of Spring semester. However, this time around we have the benefit of hindsight! Here are three key things we are doing differently this time around when it comes to polishing off client deliverables:</p>
+      <div class="publish_date">Jul 13, 2018</div>
+      <p>As we head into our final four weeks, and converge on delivering something for our client they are decisions galore to be made! Here are four ways our team is currently making decisions in this final stretch:</p>
 
-      <h2>Take advantage of the IGI model</h2>
-        <p>Okay, so IGI may or may not be a technique that we made up, but this language and approach has been really useful to us in thinking through workflow for major deliverables. IGI stands for Individual, Group, Individual. The idea is to give group members individual work time to work on pieces of a deliverable, then use group time to synthesize these pieces into one common vision. Once this group common vision is in place then we can assign individual ownership to different parts of that vision for completion. </p><br/>
+      <ol>
+        <li><h2>Focus on the happy path</h2></li>
+        <p>In order to give a holistic vision of the value our designs can provide, we’ve outlined a “happy path” for both candidates with disabilities and recruiting coordinators.</p>
 
-        <p>For example, at the end of Spring semester, we had one owner for the team presentation. That person put together a complete outline of the entire presentation themself, and drove much of the work on editing and refining the presentation based on others’ comments. Not only did this put a lot of pressure on one person, but it also made other group members feel they didn’t have a true voice in the presentation. This time around, using IGI we’ve created much better work distribution and sense of ownership.</p>
+      <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/Service-Flow.png" alt="Hiring Managers input information, candidates view information, and request accommodations if neccessary. Coordinators then respond and candidates can get updates on their requests.">An example section of our happy path</p><br/>
 
-      <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/Slides-Outline.png" alt="An outline of 35 slides with brief descriptions of the content to add for each one"/><p class="photo_caption">During the Group section, we collaboratively drew out every slide in the presentation to have one map that we agree on as a team</p><br/>
+      <p>This happy path gives us a clear sense of what we need to present a compelling vision, and helps us make decisions about which interaction flows and work to prioritize. For example, when debating whether or not to make a login screen design, we realized that it would make sense to have one based on a story we want to tell as  part of our happy path.</p>
 
-      <h2>Make it usable </h2>
-        <p>At the end of Spring, we also ran into some issues with dependency and single points of failure. For example, a single Sketch file contained our service blueprint, and it was unclear which version was the most up to date. Additionally, we created a visual style that was really dependent on the skills of one person. Our team website had a code setup that made it difficult for straight CSS editing. </p><br/>
+              <li><h2>Make it accessible</h2></li>
+              <p>Digital accessibility has governed several of design decisions, and our team is in the middle of conducting a heuristic evaluation specifically focused on accessibility, based on accessibility heuristics developed by IBM. Three of these include</p>
 
-        <p>This time around, we’re doing three new things:</p>
-        <ol>
-          <li>Ensuring we have the right tools for sharing, updating and merging our work (besides Github we have been using Abstract and Zeppelin for design work)</li>
-          <li>Building structure into work that allows for easy manipulation. For example, highlighting elements in React code that enable easier identification for CSS styling.</li>
-          <li>Leveraging more templates for visual styling. Below are examples of the initial variations we made for our final presentation in Google slides, that anyone can copy and update with their own content </li>
-        </ol>
+              <ul>
+                <li><u>Allow complete and efficient keyboard usage.</u> Mouse usage may be difficult for people without fine motor control in their hands. Because we want users to be able to navigate by keyboard, we need to create a very clear and structured information hierarchy on each page</li>
+                <li><u>Do not rely on colour alone to code and distinguish. </u>People with visual impairments may not be able to use color alone to differentiate actions. Instead of having a tab change color when it is selected, we have opted to create buttons and shapes of significant size in addition to color to indicate selection.</li>
+                <li><u>Provide meaningful and relevant alternatives to non-text elements.</u> When creating certain elements of our prototype, we need to think critically about how visual information can become textual and textual information can become visual. </li>
+              </ul>
 
-        <div class="row">
-          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/a-woods1.github.io/static/assets/images/slide-one.png" alt="A sample title presentation slide with black and white styling"/></div>
-          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/a-woods1.github.io/static/assets/images/slide-two.png" alt="A sample title presentation slide with white, black and yellow styling"/></div>
-          <div class="col-md-4 col-sm-12"><img class="blog_photo" src="/a-woods1.github.io/static/assets/images/slide-three.png" alt="A sample title presentation slide with purple, yellow and white styling"/></div>
-        </div>
-  
-      <div class="row">
-        <p class="photo_caption">Three variations of a visual template for our final presentation</p><br/>
-      </div><br/>
+              <p> Accessibility heuristics have been a critical way for us to make design decisions and we will continue to use these in coming weeks, especially when we have a coded prototype on which to text a screen reader for people with visual impairments.</p>
 
-      <h2>Hear from the horse’s mouth</h2>
-      <p>Finally, it sounds simple, but we’re being more proactive about asking our clients and faculty for their opinions. Last semester we sort of disappeared into a hole for two weeks and came out the other end with a presentation. This time around, we’re scheduling more check ins and soliciting more feedback ahead of time to ensure that what we deliver meets (and hopefully exceeds!) expectations.</p><br/>
+
+
+              <li><h2>Continue asking users</h2></li>
+              <p> Of course, nothing beats hearing directly from users and observing their behavior. This week we focused on conducting usability tests with recruiting coordinators on designs for them to respond to and manage accommodation requests. Two of the design principles we learned from them that are helping us make decisions:</p>
+
+              <ul>
+                <li><u>Make it as easy for me as possible.</u> Since our client works at a large scale, coordinators need to be able to complete actions quickly and automate as much of their workload as possible</li>
+                <li><u>Create a frictionless candidate experience.</u> Our client cares deeply that candidates have a seamless, positive hiring experience. Thinking about how to take work and worry off of candidates is something that matters to Recruiting.</li><br/>
+              </ul>
+
+
+              <li><h2>Concentrate on the deliverable</h2></li>
+
+              <p>Finally, since we are very close to handing off our work to our client, our work has been influenced by what we want to share with our clients and what would be most helpful for them after we leave. For example, we decided that creating a really specific UI kit would be less helpful than having thought out justifications for key UI elements, since our client has their own very specific visual style and UI requirements.  </p>
+
+                    <img class="blog_photo" src="/a-woods1.github.io/static/assets/images/see-saw.png" alt="A see-saw balancing two balls, related to different aspects of the disclosure decision (e.g. weighing visibility of disability versus neccesity of disclosing"/><p class="photo_caption">An example of how we might visualize the experience of weighing multiple factors in the disclosure decision</p><br/>
+
+
+            </ol>
+
+
+
+
       <br/>
         <div class="col-sm-0 col-md-1 pad"></div>
       </div>
@@ -146,12 +158,12 @@
       <h1>Up<br/>Next</h1>
     </div>
     <div class="col-sm-6">
-      <div class="blog_footer_week">Week 10</div>
-      <h2>How Do You Say Goodbye?</h2>
-      <p>It’s hard to believe but we are in the last week of work with our client. This project has taught us so many lessons, it’s hard to capture all of them.</p>
+      <div class="blog_footer_week">Week 9</div>
+      <h2>If We Could Turn Back Time</h2>
+      <p>How often do you get the chance to do a project over again? Well, due to the nature of our Capstone, we find ourselves in a somewhat similar place to where we were at the end of Spring semester.</p>
     </div>
     <div class="col-sm-1">
-      <a class="all_posts" href="/a-woods1.github.io/blog/week_10">Read More</a>
+      <a class="all_posts" href="/a-woods1.github.io/blog/week_9/">Read More</a>
     </div>
   </div>
   <div class="col-1"></div>

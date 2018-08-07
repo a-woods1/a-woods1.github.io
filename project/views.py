@@ -23,45 +23,45 @@ def team():
 def blog():
     return render_template('blog.html')
 
-@app.route('/blog/week_1')
+@app.route('/blog/week_1/')
 def blog_week_1():
-    return render_template('blog_entries/week_1.html')
+    return render_template('/blog_entries/week_1.html')
 
-@app.route('/blog/week_2')
+@app.route('/blog/week_2/')
 def blog_week_2():
-    return render_template('blog_entries/week_2.html')
+    return render_template('/blog_entries/week_2.html')
 
-@app.route('/blog/week_3')
+@app.route('/blog/week_3/')
 def blog_week_3():
-    return render_template('blog_entries/week_3.html')
+    return render_template('/blog_entries/week_3.html')
 
-@app.route('/blog/week_4')
+@app.route('/blog/week_4/')
 def blog_week_4():
-    return render_template('blog_entries/week_4.html')
+    return render_template('/blog_entries/week_4.html')
 
-@app.route('/blog/week_5')
+@app.route('/blog/week_5/')
 def blog_week_5():
-    return render_template('blog_entries/week_5.html')
+    return render_template('/blog_entries/week_5.html')
 
-@app.route('/blog/week_6')
+@app.route('/blog/week_6/')
 def blog_week_6():
-    return render_template('blog_entries/week_6.html')
+    return render_template('/blog_entries/week_6.html')
 
-@app.route('/blog/week_7')
+@app.route('/blog/week_7/')
 def blog_week_7():
-    return render_template('blog_entries/week_7.html')
+    return render_template('/blog_entries/week_7.html')
 
-@app.route('/blog/week_8')
+@app.route('/blog/week_8/')
 def blog_week_8():
-    return render_template('blog_entries/week_8.html')
+    return render_template('/blog_entries/week_8.html')
 
-@app.route('/blog/week_9')
+@app.route('/blog/week_9/')
 def blog_week_9():
-    return render_template('blog_entries/week_9.html')
+    return render_template('/blog_entries/week_9.html')
 
-@app.route('/blog/week_10')
+@app.route('/blog/week_10/')
 def blog_week_10():
-    return render_template('blog_entries/week_10.html')
+    return render_template('/blog_entries/week_10.html')
 
 
 
